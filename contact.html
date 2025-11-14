@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | SLG Housekeeping Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="header-container">
+      <div class="header-left">
+        <img src="images/Logo.png" alt="SLG Logo" class="logo" />
+        <div class="company-info">
+          <h2><span>SLG</span> Housekeeping Services</h2>
+          <p>Visakhapatnam</p>
+        </div>
+      </div>
+
+      <nav class="header-nav" id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <div class="header-contact">
+          <span>Quick Contact</span>
+          <a href="tel:+919949191912">+91 9949191912</a>
+        </div>
+        <a href="getquote.html" class="get-quote-btn">Get Quote</a>
+
+        <div class="menu-toggle" id="menuToggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="inner-hero contact-hero">
+    <div class="inner-hero-content">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you. Reach us via phone, email, or form below.</p>
+    </div>
+  </section>
+
+  <section class="inner-page contact-page">
+    
+    <form class="contact-form" id="contact-form">
+      <input type="text" name="Name" placeholder="Your Name" required aria-label="Your Name">
+      <input type="email" name="Email" placeholder="Your Email" required aria-label="Your Email">
+      <input type="tel" name="Phone" placeholder="Phone Number" required aria-label="Phone Number">
+      <textarea name="Message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
+      <button type="submit" class="btn-primary" id="submit-button">Send Message</button>
+    </form>
+    
+    <div id="form-status" style="margin-top: 15px; text-align: center; font-weight: 500;"></div>
+    
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>SLG Housekeeping Services</h3>
+        <p>Providing reliable cleaning solutions since 2015. We care for your comfort and hygiene.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Phone:</strong> +91 9949191912</p>
+        <p><strong>Email:</strong> info@slghousekeeping.com</p>
+        <p><strong>Address:</strong> Visakhapatnam, Andhra Pradesh</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2015–2025 SLG Housekeeping Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navbar = document.getElementById('navbar');
+    menuToggle.onclick = () => {
+      navbar.classList.toggle('active');
+      menuToggle.classList.toggle('open');
+    };
+  </script>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const submitButton = document.getElementById('submit-button');
+    const formStatus = document.getElementById('form-status');
+    
+    // -------------------------------------------------------------------
+    // YOUR NEW WEB APP URL IS NOW INCLUDED HERE
+    // -------------------------------------------------------------------
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzDtdpnjTU_APLCQQPJ3CCnzW3Spu1xavhxOoXJKi_1GEAgQfDHc6sxM4g65_gPlGM_qg/exec';
+    // -------------------------------------------------------------------
+
+    form.addEventListener('submit', e => {
+      e.preventDefault(); // Stop the form from submitting normally
+      
+      submitButton.disabled = true;
+      submitButton.innerText = 'Sending...';
+      formStatus.innerText = ''; // Clear previous status
+
+      const formData = new FormData(form);
+
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then(response => response.json())
+        .then(data => {
+          if (data.result === 'success') {
+            formStatus.innerText = 'Message sent successfully!';
+            formStatus.style.color = 'green';
+            form.reset(); // Clear the form
+          } else {
+            throw new Error(data.message || 'An unknown error occurred.');
+          }
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          formStatus.innerText = 'Error! Message not sent. Please try again.';
+          formStatus.style.color = 'red';
+        })
+        .finally(() => {
+          submitButton.disabled = false;
+          submitButton.innerText = 'Send Message';
+        });
+    });
+  </script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Quote | SLG Housekeeping Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="header-container">
+      <div class="header-left">
+        <img src="images/Logo.png" alt="SLG Logo" class="logo" />
+        <div class="company-info">
+          <h2><span>SLG</span> Housekeeping Services</h2>
+          <p>Visakhapatnam</p>
+        </div>
+      </div>
+
+      <nav class="header-nav" id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <div class="header-contact">
+          <span>Quick Contact</span>
+          <a href="tel:+919949191912">+91 9949191912</a>
+        </div>
+        <a href="getquote.html" class="get-quote-btn">Get Quote</a>
+
+        <div class="menu-toggle" id="menuToggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="inner-hero quote-hero">
+    <div class="inner-hero-content">
+      <h1>Request a Quote</h1>
+      <p>Fill out the form and we'll get back to you with a custom quotation.</p>
+    </div>
+  </section>
+
+  <section class="inner-page quote-page">
+    
+    <form class="quote-form" id="quote-form">
+      <input type="text" name="Name" placeholder="Full Name" required aria-label="Full Name">
+      <input type="email" name="Email" placeholder="Email Address" required aria-label="Email Address">
+      <input type="tel" name="Phone" placeholder="Phone Number" required aria-label="Phone Number">
+      <select name="Service" required aria-label="Select Service">
+        <option value="">Select Service</option>
+        <option>Bathroom Cleaning</option>
+        <option>BHK Cleaning</option>
+        <option>Sofa Cleaning</option>
+        <option>Villa Cleaning</option>
+        <option>Commercial Cleaning</option>
+        <option>Water Tank Cleaning</option>
+      </select>
+      <textarea name="Details" placeholder="Additional Details" rows="5" aria-label="Additional Details"></textarea>
+      <button type="submit" class="btn-primary" id="submit-button">Submit Request</button>
+    </form>
+    
+    <div id="form-status" style="margin-top: 15px; text-align: center; font-weight: 500;"></div>
+
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>SLG Housekeeping Services</h3>
+        <p>Providing reliable cleaning solutions since 2015. We care for your comfort and hygiene.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Phone:</strong> +91 9949191912</p>
+        <p><strong>Email:</strong> info@slghousekeeping.com</p>
+        <p><strong>Address:</strong> Visakhapatnam, Andhra Pradesh</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2015–2025 SLG Housekeeping Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navbar = document.getElementById('navbar');
+    menuToggle.onclick = () => {
+      navbar.classList.toggle('active');
+      menuToggle.classList.toggle('open');
+    };
+  </script>
+
+  <script>
+    const form = document.getElementById('quote-form'); // Changed to 'quote-form'
+    const submitButton = document.getElementById('submit-button');
+    const formStatus = document.getElementById('form-status');
+    
+    // -------------------------------------------------------------------
+    // YOUR NEW WEB APP URL IS NOW INCLUDED HERE
+    // -------------------------------------------------------------------
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyGsyIcFnAgOxD-aBsvgh3d2NUhV9FCHhE_Ktsb5Bb3g6uwI0BpwGa_4UJqZdfGc5Ov/exec';
+    // -------------------------------------------------------------------
+
+    form.addEventListener('submit', e => {
+      e.preventDefault(); // Stop the form from submitting normally
+      
+      submitButton.disabled = true;
+      submitButton.innerText = 'Submitting...'; // Changed text
+      formStatus.innerText = ''; // Clear previous status
+
+      const formData = new FormData(form);
+
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then(response => response.json())
+        .then(data => {
+          if (data.result === 'success') {
+            formStatus.innerText = 'Quote request sent successfully!'; // Changed text
+            formStatus.style.color = 'green';
+            form.reset(); // Clear the form
+          } else {
+            throw new Error(data.message || 'An unknown error occurred.');
+          }
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          formStatus.innerText = 'Error! Request not sent. Please try again.'; // Changed text
+          formStatus.style.color = 'red';
+        })
+        .finally(() => {
+          submitButton.disabled = false;
+          submitButton.innerText = 'Submit Request'; // Changed text
+        });
+    });
+  </script>
+  </body>
+</html>

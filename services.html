@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | SLG Housekeeping Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --premium-card-bg: #ffffff;
+      --premium-card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --premium-card-shadow-hover: 0 18px 45px rgba(0, 0, 0, 0.15);
+      --premium-card-radius: 18px;
+      --premium-accent: #0f70ff;
+      --premium-text: #495057;
+    }
+
+    .premium-services {
+      background: #f4f7fb;
+      padding: 5rem 0;
+    }
+
+    .premium-services .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .premium-services .section-header h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      margin-bottom: 1rem;
+    }
+
+    .premium-services .section-header p {
+      color: var(--premium-text);
+      line-height: 1.7;
+    }
+
+    .premium-service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .premium-service-card {
+      background: var(--premium-card-bg);
+      border-radius: var(--premium-card-radius);
+      overflow: hidden;
+      box-shadow: var(--premium-card-shadow);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .premium-service-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(15, 112, 255, 0.1), transparent 60%);
+      opacity: 0;
+      transition: opacity 0.35s ease;
+      pointer-events: none;
+    }
+
+    .premium-service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--premium-card-shadow-hover);
+    }
+
+    .premium-service-card:hover::after {
+      opacity: 1;
+    }
+
+    .premium-service-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .premium-service-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .premium-service-content {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .premium-service-content h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: var(--premium-accent);
+      position: relative;
+    }
+
+    .premium-service-content h3::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.75rem;
+      width: 72px;
+      height: 3px;
+      background: rgba(15, 112, 255, 0.25);
+      border-radius: 2px;
+    }
+
+    .premium-service-content p {
+      color: var(--premium-text);
+      line-height: 1.7;
+      margin: 1.5rem 0 0;
+    }
+
+    .premium-services .cta-banner {
+      margin-top: 4rem;
+      max-width: 960px;
+      padding: 2.5rem;
+      border-radius: var(--premium-card-radius);
+      background: linear-gradient(135deg, rgba(15, 112, 255, 0.1), rgba(15, 112, 255, 0.25));
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .premium-services .cta-banner h3 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: 1rem;
+    }
+
+    .premium-services .cta-banner p {
+      color: var(--premium-text);
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .premium-service-card img {
+        height: 200px;
+      }
+
+      .premium-service-content {
+        padding: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="header-left">
+        <img src="images/Logo.png" alt="SLG Logo" class="logo" />
+        <div class="company-info">
+          <h2><span>SLG</span> Housekeeping Services</h2>
+          <p>Visakhapatnam</p>
+        </div>
+      </div>
+
+      <nav class="header-nav" id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <div class="header-contact">
+          <span>Quick Contact</span>
+          <a href="tel:+919949191912">+91 9949191912</a>
+        </div>
+        <a href="getquote.html" class="get-quote-btn">Get Quote</a>
+
+        <!-- Hamburger for Mobile -->
+        <div class="menu-toggle" id="menuToggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="inner-hero services-hero">
+    <div class="inner-hero-content">
+      <h1>Our Premium Cleaning Services</h1>
+      <p>Comprehensive cleaning solutions for residences, businesses, and specialized facilities.</p>
+      <div class="hero-buttons">
+        <a href="#premium-services" class="btn-primary">Explore Services</a>
+        <a href="getquote.html" class="btn-secondary">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PREMIUM SERVICES GRID ===== -->
+  <section class="premium-services" id="premium-services">
+    <div class="section-header">
+      <h2>Tailored Cleaning Expertise</h2>
+      <p>From cozy apartments to expansive industrial facilities, our trained professionals deliver spotless results with eco-friendly products, advanced equipment, and meticulous care.</p>
+    </div>
+
+    <div class="premium-service-grid">
+      <article class="premium-service-card">
+        <img src="images/flat.png" alt="Flat Cleaning service image">
+        <div class="premium-service-content">
+          <h3>Flat Cleaning</h3>
+          <p>Detailed cleaning for studio to 3BHK flats. We sanitize kitchens, disinfect bathrooms, and refresh living spaces to create a hygienic, fragrant environment that feels brand new.</p>
+        </div>
+      </article>
+
+      <article class="premium-service-card">
+        <img src="images/Duplex Cleaning.png" alt="Duplex Cleaning service image">
+        <div class="premium-service-content">
+          <h3>Duplex Cleaning</h3>
+          <p>Specialized duplex care covering every floor, staircase, and hallway. Our crew uses high-grade tools and eco-safe products for a consistently polished finish throughout your home.</p>
+        </div>
+      </article>
+
+      <article class="premium-service-card">
+        <img src="images/villa.png" alt="Villa Cleaning service image">
+        <div class="premium-service-content">
+          <h3>Villa Cleaning</h3>
+          <p>Comprehensive villa maintenance, including glass, flooring, upholstery, and outdoor areas. Enjoy the comfort of a luxury stay with our bespoke deep-cleaning packages.</p>
+        </div>
+      </article>
+
+      <article class="premium-service-card">
+        <img src="images/bathroom.png" alt="Bathroom Cleaning service image">
+        <div class="premium-service-content">
+          <h3>Bathroom Deep Cleaning</h3>
+          <p>Eliminate stains, limescale, and bacteria with our multi-stage sanitization. We leave tiles, taps, mirrors, and fittings sparkling clean and germ-free.</p>
+        </div>
+      </article>
+
+      <article class="premium-service-card">
+        <img src="images/glass.png" alt="Glass Cleaning service image">
+        <div class="premium-service-content">
+          <h3>Glass & Facade Cleaning</h3>
+          <p>Crystal-clear glass surfaces for homes, offices, and showrooms. We use premium streak-free solutions and microfiber techniques that enhance natural light and visibility.</p>
+        </div>
+      </article>
+
+      <article class="premium-service-card">
+        <img src="images/sofa.png" alt="Sofa Cleaning service image">
+        <div class="premium-service-content">
+          <h3>Sofa & Upholstery Care</h3>
+          <p>Advanced steam and vacuum technology removes dust, stains, and allergens from sofas, recliners, and cushions—restoring comfort, appearance, and freshness.</p>
+        </div>
+      </article>
+
+      <article class="premium-service-card">
+        <img src="images/watertank.png" alt="Water Tank Cleaning service image">
+        <div class="premium-service-content">
+          <h3>Water Tank Sanitization</h3>
+          <p>Six-stage cleaning that covers draining, sludge removal, scrubbing, vacuuming, disinfection, and drying. We ensure safe, compliant water storage for homes and businesses.</p>
+        </div>
+      </article>
+
+      <article class="premium-service-card">
+        <img src="images/Commercial .png" alt="Commercial Cleaning service image">
+        <div class="premium-service-content">
+          <h3>Commercial Housekeeping</h3>
+          <p>Confidential, professional cleaning for offices, showrooms, and retail spaces. Flexible schedules minimize disruption while maintaining an immaculate business environment.</p>
+        </div>
+      </article>
+
+      <article class="premium-service-card">
+        <img src="images/industrial .png" alt="Industrial Cleaning service image">
+        <div class="premium-service-content">
+          <h3>Industrial Floor Care</h3>
+          <p>Heavy-duty cleaning for warehouses, factories, and production lines. Our team follows stringent safety protocols to keep your facility compliant, efficient, and spotless.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="cta-banner">
+      <h3>Need a Custom Cleaning Plan?</h3>
+      <p>Get in touch with our experts for tailored packages that match your space, schedule, and budget.</p>
+      <a href="contact.html" class="btn-primary">Talk to Our Team</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>SLG Housekeeping Services</h3>
+        <p>Providing reliable cleaning solutions since 2015. We care for your comfort and hygiene.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Phone:</strong> +91 9949191912</p>
+        <p><strong>Email:</strong> info@slghousekeeping.com</p>
+        <p><strong>Address:</strong> Visakhapatnam, Andhra Pradesh</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2015–2025 SLG Housekeeping Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== EXTERNAL SCRIPTS ===== -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | SLG Housekeeping Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Left: Logo & Company Info -->
+      <div class="header-left">
+        <img src="images/Logo.png" alt="SLG Logo" class="logo" />
+        <div class="company-info">
+          <h2><span>SLG</span> Housekeeping Services</h2>
+          <p>Visakhapatnam</p>
+        </div>
+      </div>
+
+      <!-- Center: Navigation -->
+      <nav class="header-nav" id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Contact + Get Quote -->
+      <div class="header-right">
+        <div class="header-contact">
+          <span>Quick Contact</span>
+          <a href="tel:+919949191912">+91 9949191912</a>
+        </div>
+        <a href="getquote.html" class="get-quote-btn">Get Quote</a>
+
+        <!-- Hamburger for Mobile -->
+        <div class="menu-toggle" id="menuToggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT HERO SECTION ===== -->
+  <section class="inner-hero about-hero">
+    <div class="inner-hero-content">
+      <h1>About SLG Housekeeping Services</h1>
+      <p>Committed to providing quality, reliable, and affordable cleaning solutions since 2015.</p>
+    </div>
+  </section>
+
+  <!-- ===== MAIN ABOUT SECTION ===== -->
+  <section class="inner-page about-page">
+    <div class="about-container">
+      <h2>Who We Are</h2>
+      <p>
+        SLG Housekeeping Services is a leading cleaning and maintenance company based in Visakhapatnam,
+        established in 2015. We specialize in residential, commercial, and industrial cleaning solutions.
+        With years of experience, we’ve earned a strong reputation for delivering professional, consistent,
+        and high-quality cleaning services that meet client expectations every time.
+      </p>
+
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to create cleaner, healthier, and happier environments for our customers by
+        offering exceptional cleaning services at affordable prices while maintaining eco-friendly practices.
+      </p>
+
+      <h2>Our Vision</h2>
+      <p>
+        To be the most trusted and preferred housekeeping and cleaning service provider in South India,
+        setting benchmarks for quality, reliability, and customer satisfaction.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US SECTION ===== -->
+  <section class="why-choose-section">
+    <h2>Why Choose SLG?</h2>
+    <div class="why-choose-cards">
+      <div class="choose-card">
+        <h3>Trusted Professionals</h3>
+        <p>Our trained staff ensures professional, punctual, and reliable service every time.</p>
+      </div>
+      <div class="choose-card">
+        <h3>Eco-Friendly Cleaning</h3>
+        <p>We use safe, eco-friendly cleaning products that are tough on dirt but gentle on the environment.</p>
+      </div>
+      <div class="choose-card">
+        <h3>Affordable Prices</h3>
+        <p>Quality cleaning shouldn't be expensive — our packages are designed for every budget.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>SLG Housekeeping Services</h3>
+        <p>Providing reliable cleaning solutions since 2015. We care for your comfort and hygiene.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Phone:</strong> +91 9949191912</p>
+        <p><strong>Email:</strong> info@slghousekeeping.com</p>
+        <p><strong>Address:</strong> Visakhapatnam, Andhra Pradesh</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2015–2025 SLG Housekeeping Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPT FOR NAV & SCROLL ANIMATION ===== -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navbar = document.getElementById('navbar');
+    menuToggle.onclick = () => {
+      navbar.classList.toggle('active');
+      menuToggle.classList.toggle('open');
+    };
+  </script>
+
+</body>
+</html>
