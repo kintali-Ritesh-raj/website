@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | SLG Housekeeping & Facility Services</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Learn about SLG Housekeeping & Facility Services - Visakhapatnam's trusted cleaning company since 2015. Professional, eco-friendly housekeeping with 9+ years of experience." />
+  <meta name="keywords" content="about housekeeping services Visakhapatnam, cleaning company, facility management company, professional cleaners, eco-friendly cleaning" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.slghk.in/about.html" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.slghk.in/about.html" />
+  <meta property="og:title" content="About Us | SLG Housekeeping & Facility Services" />
+  <meta property="og:description" content="Learn about SLG Housekeeping & Facility Services - Visakhapatnam's trusted cleaning company since 2015. Professional, eco-friendly housekeeping with 9+ years of experience." />
+  <meta property="og:image" content="https://www.slghk.in/images/Logo.png" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.slghk.in/about.html" />
+  <meta name="twitter:title" content="About Us | SLG Housekeeping & Facility Services" />
+  <meta name="twitter:description" content="Learn about SLG Housekeeping & Facility Services - Visakhapatnam's trusted cleaning company since 2015." />
+  <meta name="twitter:image" content="https://www.slghk.in/images/Logo.png" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/Logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/Logo.png" />
+  <link rel="apple-touch-icon" href="images/Logo.png" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            'primary-blue': '#1a3dbf',
+            'primary-orange': '#ff4d00',
+          },
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .gradient-secondary {
+      background: linear-gradient(135deg, #1a3dbf 0%, #ff4d00 100%);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #1a3dbf 0%, #ff4d00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .menu-toggle span {
+      transition: all 0.3s ease;
+    }
+    
+    .menu-toggle.open span:nth-child(1) {
+      transform: rotate(45deg) translate(10px, 10px);
+      background: #1a3dbf;
+    }
+    
+    .menu-toggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .menu-toggle.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+      background: #1a3dbf;
+    }
+    
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    /* Client Carousel Animation */
+    .client-carousel-container {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+    
+    .client-carousel {
+      display: flex;
+      animation: scroll 30s linear infinite;
+      gap: 2rem;
+    }
+    
+    .client-carousel:hover {
+      animation-play-state: paused;
+    }
+    
+    .client-logo-item {
+      flex-shrink: 0;
+      width: 200px;
+      height: 140px;
+      background: white;
+      border-radius: 0.75rem;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+    
+    .client-logo-item:hover {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      border-color: rgba(26, 61, 191, 0.2);
+      transform: translateY(-4px);
+    }
+    
+    .client-logo-item img {
+      max-width: 100%;
+      max-height: 80px;
+      object-fit: contain;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+    
+    .client-logo-item:hover img {
+      filter: grayscale(0%);
+    }
+    
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- ===== HEADER ===== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl shadow-sm border-b border-black/5 transition-all duration-300 hover:shadow-md">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-8 flex items-center justify-between py-4">
+      <div class="flex items-center gap-4">
+        <img src="images/Logo.png" alt="SLG Logo" class="w-12 h-12 rounded-xl shadow-sm transition-transform duration-300 hover:scale-105 hover:rotate-3" />
+        <div>
+          <h2 class="text-xl font-bold gradient-text mb-0.5 tracking-tight">
+            Housekeeping & Facility Services
+          </h2>
+          <p class="text-sm text-gray-600 font-medium">Visakhapatnam</p>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-8" id="navbar">
+        <a href="index.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Home</a>
+        <a href="about.html" class="text-primary-blue font-medium text-[15px] relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-gradient-secondary">About</a>
+        <a href="services.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Services</a>
+        <a href="gallery.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Gallery</a>
+        <a href="blogs.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Blog</a>
+        <a href="contact.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-5">
+        <div class="hidden md:flex items-center gap-3 border-l-2 border-black/10 pl-5">
+          <span class="text-xs text-gray-600 font-medium uppercase tracking-wider">Quick Contact</span>
+          <a href="tel:+919949191912" class="text-primary-blue font-bold text-[15px] hover:text-primary-orange transition-colors duration-300">+91 9949191912</a>
+        </div>
+        <a href="getquote.html" class="gradient-secondary text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg shadow-primary-blue/30 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary-blue/40 relative overflow-hidden group">
+          <span class="relative z-10">Get Quote</span>
+          <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+        </a>
+
+        <!-- Hamburger for Mobile -->
+        <div class="menu-toggle lg:hidden flex flex-col gap-1.5 p-2 cursor-pointer z-[1001]" id="menuToggle">
+          <span class="w-7 h-0.5 bg-gray-900 rounded-sm"></span>
+          <span class="w-7 h-0.5 bg-gray-900 rounded-sm"></span>
+          <span class="w-7 h-0.5 bg-gray-900 rounded-sm"></span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="lg:hidden hidden" id="mobileMenu">
+      <nav class="bg-white/98 backdrop-blur-xl border-t-2 border-black/5 rounded-b-2xl shadow-xl p-5">
+        <ul class="flex flex-col gap-0">
+          <li><a href="index.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Home</a></li>
+          <li><a href="about.html" class="block py-4 px-5 text-primary-blue bg-primary-blue/10 rounded-lg font-medium">About</a></li>
+          <li><a href="services.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Services</a></li>
+          <li><a href="gallery.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Gallery</a></li>
+          <li><a href="blogs.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Blog</a></li>
+          <li><a href="contact.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT HERO SECTION ===== -->
+  <section class="gradient-secondary text-white text-center py-28 px-5 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-[200%] h-[200%] bg-radial-gradient from-white/10 to-transparent" style="animation: rotate 20s linear infinite;"></div>
+    <div class="relative z-10 max-w-4xl mx-auto">
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-5 drop-shadow-lg">About SLG Housekeeping Services</h1>
+      <p class="text-xl sm:text-2xl text-white/95 font-normal mb-8">Committed to providing quality, reliable, and affordable cleaning solutions since 2015.</p>
+      <div class="flex flex-wrap justify-center gap-5">
+        <a href="getquote.html" class="gradient-secondary text-white px-8 py-4 rounded-full font-semibold text-base inline-block transition-all duration-300 shadow-xl shadow-primary-blue/35 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-blue/45 relative overflow-hidden group">
+          <span class="relative z-10">Get a Free Quote</span>
+          <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== EXPERIENCE HIGHLIGHT SECTION ===== -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-10 py-16 flex flex-col lg:flex-row items-center gap-12">
+    <div class="flex-1 space-y-6">
+      <p class="text-xs font-semibold tracking-[0.3em] text-primary-orange uppercase">Our Experience</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold leading-snug text-gray-900">
+        We have over 9+ years of experience in Housekeeping & Facility services.
+      </h2>
+      <p class="text-gray-600 leading-relaxed text-[15px]">
+        SLG Housekeeping & Facility Services is your one-stop solution for all cleaning and facility care needs. We deliver expert flat, duplex, and villa cleaning, bathroom deep cleaning, façade care, upholstery cleaning, water tank sanitization, commercial housekeeping, and industrial floor care—all managed through a single point of contact for smooth and reliable service.
+      </p>
+      <p class="text-gray-600 leading-relaxed text-[15px]">
+        Through efficient management practices, we minimize waste and lower costs—without compromising quality or asset performance.
+      </p>
+      <a href="tel:+919949191912" class="inline-flex items-center gap-3 gradient-secondary text-white font-semibold px-5 py-3 rounded-full shadow-lg shadow-primary-blue/30 hover:-translate-y-0.5 hover:shadow-xl transition">
+        <span class="text-lg">📞</span>
+        <span class="text-base sm:text-lg tracking-wide">+91 99491 91912</span>
+      </a>
+    </div>
+    <div class="flex-1 w-full">
+      <img src="images/Gemini_Generated_Image_h29zq8h29zq8h29z.png" alt="Experienced housekeeping team" class="w-full h-auto rounded-2xl shadow-xl object-cover" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- ===== STORY GRID SECTION ===== -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-10 py-16 space-y-16 bg-white">
+    <!-- Top Row -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <img src="images/Gemini_Generated_Image_3msakt3msakt3msa.png" alt="Cleaning team at work" class="w-full h-full rounded-2xl object-cover shadow-xl" loading="lazy" />
+      </div>
+      <div>
+        <p class="text-xs font-semibold tracking-[0.3em] text-primary-orange mb-3 uppercase">Our Mission</p>
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Your trusted partner for flawless, service-led housekeeping.</h2>
+        <p class="text-gray-600 leading-relaxed text-[15px]">
+          We aim to deliver top-tier cleaning and unmatched customer care each time we serve you. Whether it’s a corporate facility or an upscale residence, we ensure every area feels clean, comfortable, and ready to use.
+        </p>
+      </div>
+    </div>
+
+    <!-- Middle Row -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-xs font-semibold tracking-[0.3em] text-primary-orange mb-3 uppercase">Who We Are</p>
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Premium-trained staff with environmentally safe cleaning methods.</h2>
+        <p class="text-gray-600 leading-relaxed text-[15px] mb-5">
+          Why spend your time cleaning when SLG can do it better? We provide eco-friendly, well-managed housekeeping for homes, apartments, and commercial spaces—always with the right team and the right tools.
+        </p>
+        <ul class="grid grid-cols-2 gap-x-6 gap-y-3 text-gray-700 text-sm">
+          <li class="flex items-center gap-2">
+            <span class="h-1.5 w-1.5 rounded-full bg-primary-orange"></span>
+            <span>Flat Cleaning</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="h-1.5 w-1.5 rounded-full bg-primary-orange"></span>
+            <span>Duplex Cleaning</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="h-1.5 w-1.5 rounded-full bg-primary-orange"></span>
+            <span>Villa Cleaning</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="h-1.5 w-1.5 rounded-full bg-primary-orange"></span>
+            <span>Bathroom Deep Cleaning</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="h-1.5 w-1.5 rounded-full bg-primary-orange"></span>
+            <span>Glass & Facade Cleaning</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="h-1.5 w-1.5 rounded-full bg-primary-orange"></span>
+            <span>Sofa & Upholstery Care</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="h-1.5 w-1.5 rounded-full bg-primary-orange"></span>
+            <span>Water Tank Sanitization</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="h-1.5 w-1.5 rounded-full bg-primary-orange"></span>
+            <span>Commercial Housekeeping</span>
+          </li>
+        </ul>
+      </div>
+      <div class="grid grid-cols-3 gap-3">
+        <img src="images/Team-in-action.png" alt="Team in action" class="w-full h-32 sm:h-40 object-cover rounded-xl shadow" loading="lazy" />
+        <img src="images/equipment.png" alt="Equipment" class="w-full h-32 sm:h-40 object-cover rounded-xl shadow" loading="lazy" />
+        <img src="images/Workspace cleaning.png" alt="Workspace cleaning" class="w-full h-32 sm:h-40 object-cover rounded-xl shadow" loading="lazy" />
+        <img src="images/Home service.png" alt="Home service" class="w-full h-32 sm:h-40 object-cover rounded-xl shadow" loading="lazy" />
+        <img src="images/Facade cleaning.png" alt="Facade cleaning" class="w-full h-32 sm:h-40 object-cover rounded-xl shadow" loading="lazy" />
+        <img src="images/Sanitization.png" alt="Sanitization" class="w-full h-32 sm:h-40 object-cover rounded-xl shadow" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <img src="images/Dedicated crew.png" alt="Dedicated crew" class="w-full h-full rounded-2xl object-cover shadow-xl" loading="lazy" />
+      </div>
+      <div>
+        <p class="text-xs font-semibold tracking-[0.3em] text-primary-orange mb-3 uppercase">Why Choose Us</p>
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Reliability, responsiveness, and transparent care.</h2>
+        <div class="space-y-3">
+          <div class="border border-primary-orange/30 rounded-xl px-5 py-3 text-gray-900 text-sm font-semibold flex items-center gap-2 bg-primary-orange/5">
+            ✔ 24/7 Service
+          </div>
+          <div class="border border-primary-orange/30 rounded-xl px-5 py-3 text-gray-900 text-sm font-semibold flex items-center gap-2 bg-primary-orange/5">
+            ✔ Dedicated coordination team
+          </div>
+          <div class="border border-primary-orange/30 rounded-xl px-5 py-3 text-gray-900 text-sm font-semibold flex items-center gap-2 bg-primary-orange/5">
+            ✔ Guaranteed satisfaction
+          </div>
+          <div class="border border-primary-orange/30 rounded-xl px-5 py-3 text-gray-900 text-sm font-semibold flex items-center gap-2 bg-primary-orange/5">
+            ✔ Transparent pricing & free estimates
+          </div>
+          <div class="border border-primary-orange/30 rounded-xl px-5 py-3 text-gray-900 text-sm font-semibold flex items-center gap-2 bg-primary-orange/5">
+            ✔ Ready crews for residential & commercial calls
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK PROCESS SECTION ===== -->
+  <section class="bg-gray-900 text-white py-20 px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.4em] text-primary-orange text-xs font-semibold mb-2">How We Work</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">A Proven 5-Step Workflow</h2>
+        <p class="text-gray-300 max-w-3xl mx-auto">From the first phone call to the final polish, our workflow keeps you informed, ensures
+          safety, and guarantees measurable results.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div class="bg-white/10 rounded-2xl p-6 border border-white/10 backdrop-blur">
+          <span class="h-12 w-12 rounded-full flex items-center justify-center bg-white/20 text-xl font-bold mb-4">01</span>
+          <h3 class="font-semibold mb-2">Site Study</h3>
+          <p class="text-sm text-gray-200">We capture floor plans, problem areas, and safety constraints.</p>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-6 border border-white/10 backdrop-blur">
+          <span class="h-12 w-12 rounded-full flex items-center justify-center bg-white/20 text-xl font-bold mb-4">02</span>
+          <h3 class="font-semibold mb-2">Custom Proposal</h3>
+          <p class="text-sm text-gray-200">You receive a tailored scope with transparent pricing and timelines.</p>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-6 border border-white/10 backdrop-blur">
+          <span class="h-12 w-12 rounded-full flex items-center justify-center bg-white/20 text-xl font-bold mb-4">03</span>
+          <h3 class="font-semibold mb-2">On-Site Execution</h3>
+          <p class="text-sm text-gray-200">Our crew arrives with equipment, PPE, and digital checklists.</p>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-6 border border-white/10 backdrop-blur">
+          <span class="h-12 w-12 rounded-full flex items-center justify-center bg-white/20 text-xl font-bold mb-4">04</span>
+          <h3 class="font-semibold mb-2">Quality Audit</h3>
+          <p class="text-sm text-gray-200">Supervisors review every zone and log photos for records.</p>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-6 border border-white/10 backdrop-blur">
+          <span class="h-12 w-12 rounded-full flex items-center justify-center bg-white/20 text-xl font-bold mb-4">05</span>
+          <h3 class="font-semibold mb-2">Aftercare</h3>
+          <p class="text-sm text-gray-200">We provide maintenance tips, replenishment alerts, and follow-ups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section class="bg-white py-20 px-8 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.35em] text-primary-blue text-xs font-semibold mb-2">FAQs</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">Frequently Asked Questions</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+          A few quick answers about how SLG works. If you need more details, our team is just a call away.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <details class="group bg-gray-50 rounded-2xl border border-gray-200 px-5 sm:px-7 py-4 open:bg-white open:shadow-md transition-all">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h3 class="text-sm sm:text-base font-semibold text-gray-900">
+              How do you decide the price for a cleaning service?
+            </h3>
+            <span class="ml-4 h-6 w-6 flex items-center justify-center rounded-full bg-primary-blue/5 text-primary-blue text-xs font-semibold group-open:rotate-45 transition-transform">
+              +
+            </span>
+          </summary>
+          <div class="mt-3 text-sm text-gray-700 leading-relaxed">
+            Pricing is based on the size of the space, current condition, and type of service (regular cleaning,
+            deep-clean, bathroom only, post‑construction, etc.). After a short discussion or site visit, we share a
+            transparent quote with inclusions clearly listed.
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="group bg-gray-50 rounded-2xl border border-gray-200 px-5 sm:px-7 py-4 open:bg-white open:shadow-md transition-all">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h3 class="text-sm sm:text-base font-semibold text-gray-900">
+              Do I need to provide cleaning materials or equipment?
+            </h3>
+            <span class="ml-4 h-6 w-6 flex items-center justify-center rounded-full bg-primary-blue/5 text-primary-blue text-xs font-semibold group-open:rotate-45 transition-transform">
+              +
+            </span>
+          </summary>
+          <div class="mt-3 text-sm text-gray-700 leading-relaxed">
+            No. Our teams arrive with all required machinery, tools and approved cleaning chemicals. If you prefer
+            that we use specific brands or products for health reasons, we are happy to adjust the plan.
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="group bg-gray-50 rounded-2xl border border-gray-200 px-5 sm:px-7 py-4 open:bg-white open:shadow-md transition-all">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h3 class="text-sm sm:text-base font-semibold text-gray-900">
+              Are your staff background-verified and trained?
+            </h3>
+            <span class="ml-4 h-6 w-6 flex items-center justify-center rounded-full bg-primary-blue/5 text-primary-blue text-xs font-semibold group-open:rotate-45 transition-transform">
+              +
+            </span>
+          </summary>
+          <div class="mt-3 text-sm text-gray-700 leading-relaxed">
+            Yes. Every team member goes through background verification, onboarding orientation and hands‑on
+            training under a senior supervisor before they are assigned to standalone jobs.
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="group bg-gray-50 rounded-2xl border border-gray-200 px-5 sm:px-7 py-4 open:bg-white open:shadow-md transition-all">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h3 class="text-sm sm:text-base font-semibold text-gray-900">
+              How far in advance should I book a deep-clean?
+            </h3>
+            <span class="ml-4 h-6 w-6 flex items-center justify-center rounded-full bg-primary-blue/5 text-primary-blue text-xs font-semibold group-open:rotate-45 transition-transform">
+              +
+            </span>
+          </summary>
+          <div class="mt-3 text-sm text-gray-700 leading-relaxed">
+            Weekdays are usually easier to accommodate, but for weekends and festival seasons we recommend booking
+            3–5 days in advance so that we can reserve a full crew for your slot.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MILESTONES & STATS SECTION ===== -->
+  <section class="bg-primary-blue text-white py-20 px-5 text-center my-20" id="milestones-section">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-16">SLG Housekeeping by the Numbers</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white/10 p-8 rounded-2xl transition-all duration-300 border border-white/20 hover:bg-white/20 hover:-translate-y-1">
+          <h3 class="text-5xl font-extrabold mb-2 text-primary-orange drop-shadow-lg" data-target="9" id="stat-years">9+</h3>
+          <p class="text-base text-white/80 font-medium">Years of Service</p>
+        </div>
+        <div class="bg-white/10 p-8 rounded-2xl transition-all duration-300 border border-white/20 hover:bg-white/20 hover:-translate-y-1">
+          <h3 class="text-5xl font-extrabold mb-2 text-primary-orange drop-shadow-lg" data-target="1000" id="stat-projects">1,000+</h3>
+          <p class="text-base text-white/80 font-medium">Completed Projects</p>
+        </div>
+        <div class="bg-white/10 p-8 rounded-2xl transition-all duration-300 border border-white/20 hover:bg-white/20 hover:-translate-y-1">
+          <h3 class="text-5xl font-extrabold mb-2 text-primary-orange drop-shadow-lg" data-target="500" id="stat-clients">500+</h3>
+          <p class="text-base text-white/80 font-medium">Happy Clients</p>
+        </div>
+        <div class="bg-white/10 p-8 rounded-2xl transition-all duration-300 border border-white/20 hover:bg-white/20 hover:-translate-y-1">
+          <h3 class="text-5xl font-extrabold mb-2 text-primary-orange drop-shadow-lg" data-target="95" id="stat-retention">95%</h3>
+          <p class="text-base text-white/80 font-medium">Customer Retention</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== OUR VALUED CLIENTS SECTION ===== -->
+  <section class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.3em] text-primary-blue text-xs font-semibold mb-2">Our Partners</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">Our Valued Clients</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Trusted by leading companies and organizations across Visakhapatnam</p>
+      </div>
+      
+      <div class="client-carousel-container">
+        <div class="client-carousel">
+          <!-- First Set of Logos -->
+          <div class="client-logo-item">
+            <img src="company_images/biophore.png" alt="Biophore" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/coromandel.png" alt="Coromandel" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/embassy.png" alt="Embassy" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/gmfc-labs.png" alt="GMFC Labs" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/gmr.png" alt="GMR" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/globe infra.png" alt="Globe Infrastructure" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/iim.png" alt="IIM" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/karlan.png" alt="Karlan" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/lansum.png" alt="Lansum" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/mk-buider-and-developer.png" alt="MK Builder and Developer" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/mvv.png" alt="MVV" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/nmdc-limited.png" alt="NMDC Limited" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/sarda.png" alt="Sarda" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/tata-motor-shivasankar.png" alt="Tata Motors Shivasankar" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/uss.png" alt="USS" loading="lazy" />
+          </div>
+          
+          <!-- Duplicate Set for Seamless Loop -->
+          <div class="client-logo-item">
+            <img src="company_images/biophore.png" alt="Biophore" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/coromandel.png" alt="Coromandel" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/embassy.png" alt="Embassy" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/gmfc-labs.png" alt="GMFC Labs" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/gmr.png" alt="GMR" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/globe infra.png" alt="Globe Infrastructure" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/iim.png" alt="IIM" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/karlan.png" alt="Karlan" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/lansum.png" alt="Lansum" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/mk-buider-and-developer.png" alt="MK Builder and Developer" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/mvv.png" alt="MVV" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/nmdc-limited.png" alt="NMDC Limited" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/sarda.png" alt="Sarda" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/tata-motor-shivasankar.png" alt="Tata Motors Shivasankar" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/uss.png" alt="USS" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CALL TO ACTION BANNER ===== -->
+  <section class="gradient-secondary py-16 px-5 text-center text-white my-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-radial-gradient from-white/10 to-transparent" style="background: radial-gradient(circle at 10% 90%, rgba(255, 255, 255, 0.1) 0%, transparent 60%);"></div>
+    <div class="max-w-4xl mx-auto relative z-10">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4 drop-shadow-lg">Ready for a Spotless Space?</h2>
+      <p class="text-xl text-white/90 mb-8">Contact us today for a free, no-obligation quote tailored specifically to your residential or commercial cleaning needs.</p>
+      <div class="flex flex-wrap justify-center gap-5">
+        <a href="getquote.html" class="gradient-secondary text-white px-8 py-4 rounded-full font-semibold text-base inline-block transition-all duration-300 shadow-xl shadow-primary-blue/35 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-blue/45 relative overflow-hidden group">
+          <span class="relative z-10">Get Your Free Quote</span>
+          <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+        </a>
+        <a href="services.html" class="bg-transparent text-white px-8 py-4 rounded-full font-semibold text-base inline-block transition-all duration-300 border-2 border-white hover:bg-white hover:text-primary-blue">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-300 pt-16 pb-8 mt-20 relative">
+    <div class="absolute top-0 left-0 right-0 h-1 gradient-secondary"></div>
+    <div class="max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="text-2xl font-bold mb-4 gradient-text">SLG Housekeeping Services</h3>
+        <p class="leading-relaxed text-gray-400 text-sm">Providing reliable cleaning solutions since 2015. We care for your comfort and hygiene.</p>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold text-white mb-5 relative pb-2.5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 gradient-secondary after:rounded-sm">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Home</a></li>
+          <li><a href="about.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">About</a></li>
+          <li><a href="services.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Services</a></li>
+          <li><a href="gallery.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Gallery</a></li>
+          <li><a href="blogs.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Blog</a></li>
+          <li><a href="contact.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold text-white mb-5 relative pb-2.5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 gradient-secondary after:rounded-sm">Contact Us</h4>
+        <ul class="space-y-2 text-gray-400 text-sm leading-relaxed">
+          <li><strong class="text-white font-semibold">Phone/WhatsApp:</strong> <a href="tel:+919949191912" class="hover:text-white transition-colors">+91 99491 91912</a> | <a href="https://wa.me/9949191912" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:text-green-300">WhatsApp</a></li>
+          <li><strong class="text-white font-semibold">Email:</strong> <a href="mailto:slghousekeepingservices@gmail.com" class="hover:text-white transition-colors">slghousekeepingservices@gmail.com</a></li>
+          <li><strong class="text-white font-semibold">Address:</strong> D.NO. 32-3-5/1, Bowdara Road, Bhupesh Nagar, Allipuram, Visakhapatnam – 530004, Andhra Pradesh</li>
+        </ul>
+        <div class="mt-4 flex gap-3">
+          <a href="https://www.facebook.com/profile.php?id=61554209671782" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/slg_hk_services_24by7/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UC-id_34vRiVE7S2UUdLTSCA" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center mt-12 pt-6 border-t border-white/10 text-sm text-gray-500">
+      <p>© 2015–2025 SLG Housekeeping Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('open');
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+  
+  <script>
+    // Script to animate numbers starting from 0 when the section is visible
+    document.addEventListener('DOMContentLoaded', function() {
+        const milestonesSection = document.getElementById('milestones-section');
+        const stats = document.querySelectorAll('.milestone-card h3, [id^="stat-"]');
+        let animationStarted = false;
+
+        function animateCounter(stat) {
+            const target = parseInt(stat.getAttribute('data-target'));
+            const duration = 2000;
+            let startTimestamp = null;
+
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = timestamp - startTimestamp;
+                
+                const increment = Math.min(Math.floor(progress / duration * target), target);
+                let displayValue = increment;
+                let formattedValue = displayValue.toLocaleString('en-IN'); 
+                
+                if (displayValue === target) {
+                    if (stat.id === 'stat-projects') {
+                        formattedValue = '1,000+';
+                    } else if (stat.id === 'stat-years') {
+                        formattedValue = '9+';
+                    } else if (stat.id === 'stat-clients') {
+                        formattedValue = '500+';
+                    } else if (stat.id === 'stat-retention') {
+                        formattedValue = '95%';
+                    }
+                } else {
+                    if (stat.id === 'stat-retention') {
+                        formattedValue += '%';
+                    }
+                }
+                
+                stat.innerText = formattedValue;
+
+                if (progress < duration) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+
+            window.requestAnimationFrame(step);
+        }
+        
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !animationStarted) {
+                    stats.forEach(animateCounter);
+                    animationStarted = true;
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (milestonesSection) {
+            stats.forEach(stat => {
+                const isPercentage = stat.id === 'stat-retention';
+                stat.innerText = isPercentage ? '0%' : '0';
+            });
+
+            observer.observe(milestonesSection);
+        }
+    });
+  </script>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "SLG Housekeeping & Facility Services",
+      "url": "https://www.slghk.in",
+      "logo": "https://www.slghk.in/images/Logo.png",
+      "foundingDate": "2015",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Visakhapatnam",
+        "addressRegion": "Andhra Pradesh",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+919949191912",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": "English"
+      },
+      "sameAs": []
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do you decide the price for a cleaning service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pricing is based on the size of the space, current condition, and type of service (regular cleaning, deep-clean, bathroom only, post‑construction, etc.). After a short discussion or site visit, we share a transparent quote with inclusions clearly listed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to provide cleaning materials or equipment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Our teams arrive with all required machinery, tools and approved cleaning chemicals. If you prefer that we use specific brands or products for health reasons, we are happy to adjust the plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are your staff background-verified and trained?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every team member goes through background verification, onboarding orientation and hands‑on training under a senior supervisor before they are assigned to standalone jobs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far in advance should I book a deep-clean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Weekdays are usually easier to accommodate, but for weekends and festival seasons we recommend booking 3–5 days in advance so that we can reserve a full crew for your slot."
+        }
+      }
+    ]
+  }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | SLG Housekeeping & Facility Services</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Comprehensive cleaning services in Visakhapatnam: Flat cleaning, villa cleaning, office cleaning, bathroom deep cleaning, water tank sanitization, and more. Professional, eco-friendly solutions." />
+  <meta name="keywords" content="cleaning services Visakhapatnam, flat cleaning, villa cleaning, office cleaning, commercial cleaning, bathroom cleaning, water tank cleaning, facade cleaning, upholstery cleaning" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.slghk.in/services.html" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.slghk.in/services.html" />
+  <meta property="og:title" content="Our Services | SLG Housekeeping & Facility Services" />
+  <meta property="og:description" content="Comprehensive cleaning services in Visakhapatnam: Flat cleaning, villa cleaning, office cleaning, bathroom deep cleaning, water tank sanitization, and more." />
+  <meta property="og:image" content="https://www.slghk.in/images/Logo.png" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.slghk.in/services.html" />
+  <meta name="twitter:title" content="Our Services | SLG Housekeeping & Facility Services" />
+  <meta name="twitter:description" content="Comprehensive cleaning services in Visakhapatnam: Flat cleaning, villa cleaning, office cleaning, and more." />
+  <meta name="twitter:image" content="https://www.slghk.in/images/Logo.png" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/Logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/Logo.png" />
+  <link rel="apple-touch-icon" href="images/Logo.png" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            'primary-blue': '#1a3dbf',
+            'primary-orange': '#ff4d00',
+          },
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .gradient-secondary {
+      background: linear-gradient(135deg, #1a3dbf 0%, #ff4d00 100%);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #1a3dbf 0%, #ff4d00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .menu-toggle span {
+      transition: all 0.3s ease;
+    }
+    
+    .menu-toggle.open span:nth-child(1) {
+      transform: rotate(45deg) translate(10px, 10px);
+      background: #1a3dbf;
+    }
+    
+    .menu-toggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .menu-toggle.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+      background: #1a3dbf;
+    }
+    
+    /* Client Carousel Animation */
+    .client-carousel-container {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+    
+    .client-carousel {
+      display: flex;
+      animation: scroll 30s linear infinite;
+      gap: 2rem;
+    }
+    
+    .client-carousel:hover {
+      animation-play-state: paused;
+    }
+    
+    .client-logo-item {
+      flex-shrink: 0;
+      width: 200px;
+      height: 140px;
+      background: white;
+      border-radius: 0.75rem;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+    
+    .client-logo-item:hover {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      border-color: rgba(26, 61, 191, 0.2);
+      transform: translateY(-4px);
+    }
+    
+    .client-logo-item img {
+      max-width: 100%;
+      max-height: 80px;
+      object-fit: contain;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+    
+    .client-logo-item:hover img {
+      filter: grayscale(0%);
+    }
+    
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- ===== HEADER ===== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl shadow-sm border-b border-black/5 transition-all duration-300 hover:shadow-md">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-8 flex items-center justify-between py-4">
+      <div class="flex items-center gap-4">
+        <img src="images/Logo.png" alt="SLG Logo" class="w-12 h-12 rounded-xl shadow-sm transition-transform duration-300 hover:scale-105 hover:rotate-3" />
+        <div>
+          <h2 class="text-xl font-bold gradient-text mb-0.5 tracking-tight">
+            Housekeeping & Facility Services
+          </h2>
+          <p class="text-sm text-gray-600 font-medium">Visakhapatnam</p>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-8" id="navbar">
+        <a href="index.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Home</a>
+        <a href="about.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">About</a>
+        <a href="services.html" class="text-primary-blue font-medium text-[15px] relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-gradient-secondary">Services</a>
+        <a href="gallery.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Gallery</a>
+        <a href="blogs.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Blog</a>
+        <a href="contact.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-5">
+        <div class="hidden md:flex items-center gap-3 border-l-2 border-black/10 pl-5">
+          <span class="text-xs text-gray-600 font-medium uppercase tracking-wider">Quick Contact</span>
+          <a href="tel:+919949191912" class="text-primary-blue font-bold text-[15px] hover:text-primary-orange transition-colors duration-300">+91 9949191912</a>
+        </div>
+        <a href="getquote.html" class="gradient-secondary text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg shadow-primary-blue/30 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary-blue/40 relative overflow-hidden group">
+          <span class="relative z-10">Get Quote</span>
+          <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+        </a>
+
+        <!-- Hamburger for Mobile -->
+        <div class="menu-toggle lg:hidden flex flex-col gap-1.5 p-2 cursor-pointer z-[1001]" id="menuToggle">
+          <span class="w-7 h-0.5 bg-gray-900 rounded-sm"></span>
+          <span class="w-7 h-0.5 bg-gray-900 rounded-sm"></span>
+          <span class="w-7 h-0.5 bg-gray-900 rounded-sm"></span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="lg:hidden hidden" id="mobileMenu">
+      <nav class="bg-white/98 backdrop-blur-xl border-t-2 border-black/5 rounded-b-2xl shadow-xl p-5">
+        <ul class="flex flex-col gap-0">
+          <li><a href="index.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Home</a></li>
+          <li><a href="about.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">About</a></li>
+          <li><a href="services.html" class="block py-4 px-5 text-primary-blue bg-primary-blue/10 rounded-lg font-medium">Services</a></li>
+          <li><a href="gallery.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Gallery</a></li>
+          <li><a href="blogs.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Blog</a></li>
+          <li><a href="contact.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== BREADCRUMB NAVIGATION ===== -->
+  <!-- <nav class="bg-gray-50 py-4 px-8" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li><a href="index.html" class="text-gray-600 hover:text-primary-blue transition-colors">Home</a></li>
+        <li class="text-gray-400">/</li>
+        <li class="text-gray-900 font-medium" aria-current="page">Services</li>
+      </ol>
+    </div>
+  </nav> -->
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="gradient-secondary text-white text-center py-28 px-5 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-[200%] h-[200%] bg-radial-gradient from-white/10 to-transparent" style="animation: rotate 20s linear infinite;"></div>
+    <div class="relative z-10 max-w-4xl mx-auto">
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-5 drop-shadow-lg">Our Premium Cleaning Services</h1>
+      <p class="text-xl sm:text-2xl text-white/95 font-normal mb-8">Comprehensive cleaning solutions for residences, businesses, and specialized facilities.</p>
+      <div class="flex flex-wrap justify-center gap-5">
+        <a href="#premium-services" class="gradient-secondary text-white px-8 py-4 rounded-full font-semibold text-base inline-block transition-all duration-300 shadow-xl shadow-primary-blue/35 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-blue/45 relative overflow-hidden group">
+          <span class="relative z-10">Explore Services</span>
+          <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+        </a>
+        <a href="getquote.html" class="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-semibold text-base inline-block transition-all duration-300 border-2 border-white/30 hover:bg-white/30 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/20">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PREMIUM SERVICES GRID ===== -->
+  <section class="bg-gray-50 py-20" id="premium-services">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <div class="max-w-2xl mx-auto mb-14">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4">Tailored Cleaning Expertise</h2>
+        <p class="text-gray-600 leading-relaxed">From cozy apartments to expansive industrial facilities, our trained professionals deliver spotless results with eco-friendly products, advanced equipment, and meticulous care.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto" data-stack-cards>
+        <article class="premium-service-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-350 flex flex-col relative group hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-350 pointer-events-none"></div>
+          <img src="images/flat.png" alt="Flat Cleaning service image" class="w-full h-56 object-cover transition-transform duration-400 group-hover:scale-105">
+          <div class="p-8 flex flex-col flex-1">
+            <h3 class="text-2xl mb-4 text-primary-blue relative pb-3 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-18 after:h-0.5 after:bg-primary-blue/25 after:rounded-sm">Flat Cleaning</h3>
+            <p class="text-gray-600 leading-relaxed mt-6 flex-1">Detailed cleaning for studio to 3BHK flats. We sanitize kitchens, disinfect bathrooms, and refresh living spaces to create a hygienic, fragrant environment that feels brand new.</p>
+          </div>
+        </article>
+
+        <article class="premium-service-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-350 flex flex-col relative group hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-350 pointer-events-none"></div>
+          <img src="images/Duplex Cleaning.png" alt="Duplex Cleaning service image" class="w-full h-56 object-cover transition-transform duration-400 group-hover:scale-105">
+          <div class="p-8 flex flex-col flex-1">
+            <h3 class="text-2xl mb-4 text-primary-blue relative pb-3 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-18 after:h-0.5 after:bg-primary-blue/25 after:rounded-sm">Duplex Cleaning</h3>
+            <p class="text-gray-600 leading-relaxed mt-6 flex-1">Specialized duplex care covering every floor, staircase, and hallway. Our crew uses high-grade tools and eco-safe products for a consistently polished finish throughout your home.</p>
+          </div>
+        </article>
+
+        <article class="premium-service-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-350 flex flex-col relative group hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-350 pointer-events-none"></div>
+          <img src="images/villa.png" alt="Villa Cleaning service image" class="w-full h-56 object-cover transition-transform duration-400 group-hover:scale-105">
+          <div class="p-8 flex flex-col flex-1">
+            <h3 class="text-2xl mb-4 text-primary-blue relative pb-3 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-18 after:h-0.5 after:bg-primary-blue/25 after:rounded-sm">Villa Cleaning</h3>
+            <p class="text-gray-600 leading-relaxed mt-6 flex-1">Comprehensive villa maintenance, including glass, flooring, upholstery, and outdoor areas. Enjoy the comfort of a luxury stay with our bespoke deep-cleaning packages.</p>
+          </div>
+        </article>
+
+        <article class="premium-service-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-350 flex flex-col relative group hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-350 pointer-events-none"></div>
+          <img src="images/bathroom.png" alt="Bathroom Cleaning service image" class="w-full h-56 object-cover transition-transform duration-400 group-hover:scale-105">
+          <div class="p-8 flex flex-col flex-1">
+            <h3 class="text-2xl mb-4 text-primary-blue relative pb-3 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-18 after:h-0.5 after:bg-primary-blue/25 after:rounded-sm">Bathroom Deep Cleaning</h3>
+            <p class="text-gray-600 leading-relaxed mt-6 flex-1">Eliminate stains, limescale, and bacteria with our multi-stage sanitization. We leave tiles, taps, mirrors, and fittings sparkling clean and germ-free.</p>
+          </div>
+        </article>
+
+        <article class="premium-service-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-350 flex flex-col relative group hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-350 pointer-events-none"></div>
+          <img src="images/glass.png" alt="Glass Cleaning service image" class="w-full h-56 object-cover transition-transform duration-400 group-hover:scale-105">
+          <div class="p-8 flex flex-col flex-1">
+            <h3 class="text-2xl mb-4 text-primary-blue relative pb-3 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-18 after:h-0.5 after:bg-primary-blue/25 after:rounded-sm">Glass & Facade Cleaning</h3>
+            <p class="text-gray-600 leading-relaxed mt-6 flex-1">Crystal-clear glass surfaces for homes, offices, and showrooms. We use premium streak-free solutions and microfiber techniques that enhance natural light and visibility.</p>
+          </div>
+        </article>
+
+        <article class="premium-service-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-350 flex flex-col relative group hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-350 pointer-events-none"></div>
+          <img src="images/sofa.png" alt="Sofa Cleaning service image" class="w-full h-56 object-cover transition-transform duration-400 group-hover:scale-105">
+          <div class="p-8 flex flex-col flex-1">
+            <h3 class="text-2xl mb-4 text-primary-blue relative pb-3 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-18 after:h-0.5 after:bg-primary-blue/25 after:rounded-sm">Sofa & Upholstery Care</h3>
+            <p class="text-gray-600 leading-relaxed mt-6 flex-1">Advanced steam and vacuum technology removes dust, stains, and allergens from sofas, recliners, and cushions—restoring comfort, appearance, and freshness.</p>
+          </div>
+        </article>
+
+        <article class="premium-service-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-350 flex flex-col relative group hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-350 pointer-events-none"></div>
+          <img src="images/watertank.png" alt="Water Tank Cleaning service image" class="w-full h-56 object-cover transition-transform duration-400 group-hover:scale-105">
+          <div class="p-8 flex flex-col flex-1">
+            <h3 class="text-2xl mb-4 text-primary-blue relative pb-3 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-18 after:h-0.5 after:bg-primary-blue/25 after:rounded-sm">Water Tank Sanitization</h3>
+            <p class="text-gray-600 leading-relaxed mt-6 flex-1">Six-stage cleaning that covers draining, sludge removal, scrubbing, vacuuming, disinfection, and drying. We ensure safe, compliant water storage for homes and businesses.</p>
+          </div>
+        </article>
+
+        <article class="premium-service-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-350 flex flex-col relative group hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-350 pointer-events-none"></div>
+          <img src="images/commercial.png" alt="Commercial Cleaning service image" class="w-full h-56 object-cover transition-transform duration-400 group-hover:scale-105">
+          <div class="p-8 flex flex-col flex-1">
+            <h3 class="text-2xl mb-4 text-primary-blue relative pb-3 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-18 after:h-0.5 after:bg-primary-blue/25 after:rounded-sm">Commercial Housekeeping</h3>
+            <p class="text-gray-600 leading-relaxed mt-6 flex-1">Confidential, professional cleaning for offices, showrooms, and retail spaces. Flexible schedules minimize disruption while maintaining an immaculate business environment.</p>
+          </div>
+        </article>
+
+        <article class="premium-service-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-350 flex flex-col relative group hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-350 pointer-events-none"></div>
+          <img src="images/industrial.png" alt="Industrial Cleaning service image" class="w-full h-56 object-cover transition-transform duration-400 group-hover:scale-105">
+          <div class="p-8 flex flex-col flex-1">
+            <h3 class="text-2xl mb-4 text-primary-blue relative pb-3 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-18 after:h-0.5 after:bg-primary-blue/25 after:rounded-sm">Industrial Floor Care</h3>
+            <p class="text-gray-600 leading-relaxed mt-6 flex-1">Heavy-duty cleaning for warehouses, factories, and production lines. Our team follows stringent safety protocols to keep your facility compliant, efficient, and spotless.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-16 max-w-4xl mx-auto p-10 rounded-2xl bg-gradient-to-br from-primary-blue/10 to-primary-blue/25 text-center">
+        <h3 class="text-2xl sm:text-3xl font-extrabold mb-4">Need a Custom Cleaning Plan?</h3>
+        <p class="text-gray-600 mb-6">Get in touch with our experts for tailored packages that match your space, schedule, and budget.</p>
+        <a href="contact.html" class="gradient-secondary text-white px-8 py-4 rounded-full font-semibold text-base inline-block transition-all duration-300 shadow-xl shadow-primary-blue/35 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-blue/45 relative overflow-hidden group">
+          <span class="relative z-10">Talk to Our Team</span>
+          <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR VALUED CLIENTS SECTION ===== -->
+  <section class="bg-white py-20 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.3em] text-primary-blue text-xs font-semibold mb-2">Our Partners</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">Our Valued Clients</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Trusted by leading companies and organizations across Visakhapatnam</p>
+      </div>
+      
+      <div class="client-carousel-container">
+        <div class="client-carousel">
+          <!-- First Set of Logos -->
+          <div class="client-logo-item">
+            <img src="company_images/biophore.png" alt="Biophore" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/coromandel.png" alt="Coromandel" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/embassy.png" alt="Embassy" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/gmfc-labs.png" alt="GMFC Labs" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/gmr.png" alt="GMR" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/globe infra.png" alt="Globe Infrastructure" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/iim.png" alt="IIM" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/karlan.png" alt="Karlan" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/lansum.png" alt="Lansum" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/mk-buider-and-developer.png" alt="MK Builder and Developer" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/mvv.png" alt="MVV" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/nmdc-limited.png" alt="NMDC Limited" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/sarda.png" alt="Sarda" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/tata-motor-shivasankar.png" alt="Tata Motors Shivasankar" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/uss.png" alt="USS" loading="lazy" />
+          </div>
+          
+          <!-- Duplicate Set for Seamless Loop -->
+          <div class="client-logo-item">
+            <img src="company_images/biophore.png" alt="Biophore" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/coromandel.png" alt="Coromandel" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/embassy.png" alt="Embassy" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/gmfc-labs.png" alt="GMFC Labs" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/gmr.png" alt="GMR" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/globe infra.png" alt="Globe Infrastructure" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/iim.png" alt="IIM" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/karlan.png" alt="Karlan" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/lansum.png" alt="Lansum" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/mk-buider-and-developer.png" alt="MK Builder and Developer" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/mvv.png" alt="MVV" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/nmdc-limited.png" alt="NMDC Limited" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/sarda.png" alt="Sarda" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/tata-motor-shivasankar.png" alt="Tata Motors Shivasankar" loading="lazy" />
+          </div>
+          <div class="client-logo-item">
+            <img src="company_images/uss.png" alt="USS" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-300 pt-16 pb-8 mt-20 relative">
+    <div class="absolute top-0 left-0 right-0 h-1 gradient-secondary"></div>
+    <div class="max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="text-2xl font-bold mb-4 gradient-text">SLG Housekeeping & Facility Services</h3>
+        <p class="leading-relaxed text-gray-400 text-sm">Providing reliable cleaning solutions since 2015. We care for your comfort and hygiene.</p>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold text-white mb-5 relative pb-2.5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 gradient-secondary after:rounded-sm">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Home</a></li>
+          <li><a href="about.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">About</a></li>
+          <li><a href="services.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Services</a></li>
+          <li><a href="gallery.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Gallery</a></li>
+          <li><a href="blogs.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Blog</a></li>
+          <li><a href="contact.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold text-white mb-5 relative pb-2.5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 gradient-secondary after:rounded-sm">Contact Us</h4>
+        <ul class="space-y-2 text-gray-400 text-sm leading-relaxed">
+          <li><strong class="text-white font-semibold">Phone/WhatsApp:</strong> <a href="tel:+919949191912" class="hover:text-white transition-colors">+91 99491 91912</a> | <a href="https://wa.me/9949191912" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:text-green-300">WhatsApp</a></li>
+          <li><strong class="text-white font-semibold">Email:</strong> <a href="mailto:slghousekeepingservices@gmail.com" class="hover:text-white transition-colors">slghousekeepingservices@gmail.com</a></li>
+          <li><strong class="text-white font-semibold">Address:</strong> D.NO. 32-3-5/1, Bowdara Road, Bhupesh Nagar, Allipuram, Visakhapatnam – 530004, Andhra Pradesh</li>
+        </ul>
+        <div class="mt-4 flex gap-3">
+          <a href="https://www.facebook.com/profile.php?id=61554209671782" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/slg_hk_services_24by7/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UC-id_34vRiVE7S2UUdLTSCA" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center mt-12 pt-6 border-t border-white/10 text-sm text-gray-500">
+      <p>© 2015–2025 SLG Housekeeping & Facility Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== EXTERNAL SCRIPTS ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('open');
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+
+  <!-- Structured Data (JSON-LD) - Services -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Housekeeping & Facility Services",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "SLG Housekeeping & Facility Services",
+      "url": "https://www.slghk.in",
+      "telephone": "+919949191912",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Visakhapatnam",
+        "addressRegion": "Andhra Pradesh",
+        "addressCountry": "IN"
+      }
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Visakhapatnam"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Cleaning Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Flat Cleaning",
+            "description": "Detailed cleaning for studio to 3BHK flats"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Duplex Cleaning",
+            "description": "Specialized duplex care covering every floor, staircase, and hallway"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Villa Cleaning",
+            "description": "Comprehensive villa maintenance including glass, flooring, upholstery, and outdoor areas"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Bathroom Deep Cleaning",
+            "description": "Multi-stage sanitization for tiles, taps, mirrors, and fittings"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Glass & Facade Cleaning",
+            "description": "Crystal-clear glass surfaces for homes, offices, and showrooms"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sofa & Upholstery Care",
+            "description": "Advanced steam and vacuum technology for sofas, recliners, and cushions"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Water Tank Sanitization",
+            "description": "Six-stage cleaning for safe, compliant water storage"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Commercial Housekeeping",
+            "description": "Professional cleaning for offices, showrooms, and retail spaces"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Industrial Floor Care",
+            "description": "Heavy-duty cleaning for warehouses, factories, and production lines"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What cleaning services does SLG offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SLG Housekeeping & Facility Services offers comprehensive cleaning solutions including flat cleaning, villa cleaning, office cleaning, bathroom deep cleaning, water tank sanitization, glass & facade cleaning, sofa & upholstery cleaning, and commercial housekeeping services in Visakhapatnam."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are SLG's cleaning products eco-friendly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, SLG uses only eco-friendly, kid-safe cleaning products that are effective yet gentle on surfaces and health. All our cleaning solutions are biodegradable and safe for families and pets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should I schedule professional cleaning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For residential properties, we recommend deep cleaning every 3-6 months with regular maintenance in between. Commercial spaces may need weekly or monthly cleaning depending on foot traffic. Water tanks should be cleaned every 6-12 months."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide cleaning services for commercial spaces?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, SLG provides comprehensive commercial housekeeping services for offices, showrooms, retail spaces, warehouses, and industrial facilities. We offer flexible schedules to minimize disruption to your business operations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is your staff background-verified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all SLG team members undergo thorough background checks. Our staff wear uniforms, carry ID cards, and are fully insured, ensuring your complete peace of mind and security."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get a quote for cleaning services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can request a free quote by visiting our Get Quote page, calling us at +91 99491 91912, or emailing slghousekeepingservices@gmail.com. We provide transparent, upfront pricing with no hidden fees."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Breadcrumb Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.slghk.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://www.slghk.in/services.html"
+      }
+    ]
+  }
+  </script>
+
+</body>
+</html>

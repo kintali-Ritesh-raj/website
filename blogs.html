@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Cleaning Tips & Housekeeping Articles | SLG Services</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Read our housekeeping blog for cleaning tips, maintenance guides, and expert advice on keeping your home and office spotless. Professional cleaning insights from Visakhapatnam." />
+  <meta name="keywords" content="housekeeping blog, cleaning tips, maintenance guides, facility management articles, cleaning advice Visakhapatnam" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.slghk.in/blogs.html" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.slghk.in/blogs.html" />
+  <meta property="og:title" content="Blog | Cleaning Tips & Housekeeping Articles | SLG Services" />
+  <meta property="og:description" content="Read our housekeeping blog for cleaning tips, maintenance guides, and expert advice on keeping your home and office spotless." />
+  <meta property="og:image" content="https://www.slghk.in/images/Logo.png" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.slghk.in/blogs.html" />
+  <meta name="twitter:title" content="Blog | Cleaning Tips & Housekeeping Articles" />
+  <meta name="twitter:description" content="Read our housekeeping blog for cleaning tips, maintenance guides, and expert advice." />
+  <meta name="twitter:image" content="https://www.slghk.in/images/Logo.png" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/Logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/Logo.png" />
+  <link rel="apple-touch-icon" href="images/Logo.png" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            'primary-blue': '#1a3dbf',
+            'primary-orange': '#ff4d00',
+          },
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .gradient-secondary {
+      background: linear-gradient(135deg, #1a3dbf 0%, #ff4d00 100%);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #1a3dbf 0%, #ff4d00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .menu-toggle span {
+      transition: all 0.3s ease;
+    }
+    
+    .menu-toggle.open span:nth-child(1) {
+      transform: rotate(45deg) translate(10px, 10px);
+      background: #1a3dbf;
+    }
+    
+    .menu-toggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .menu-toggle.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+      background: #1a3dbf;
+    }
+    
+    /* Blog Expandable Content */
+    .blog-full-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
+    }
+    
+    .blog-full-content.expanded {
+      max-height: 5000px;
+      transition: max-height 0.5s ease-in;
+    }
+    
+    .read-more-btn {
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      text-align: left;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- ===== HEADER ===== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl shadow-sm border-b border-black/5 transition-all duration-300 hover:shadow-md">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-8 flex items-center justify-between py-4">
+      <div class="flex items-center gap-4">
+        <img src="images/Logo.png" alt="SLG Logo" class="w-12 h-12 rounded-xl shadow-sm transition-transform duration-300 hover:scale-105 hover:rotate-3" />
+        <div>
+          <h2 class="text-xl font-bold gradient-text mb-0.5 tracking-tight">
+            Housekeeping & Facility Services
+          </h2>
+          <p class="text-sm text-gray-600 font-medium">Visakhapatnam</p>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-8" id="navbar">
+        <a href="index.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Home</a>
+        <a href="about.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">About</a>
+        <a href="services.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Services</a>
+        <a href="gallery.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Gallery</a>
+        <a href="blogs.html" class="text-primary-blue font-medium text-[15px] relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-gradient-secondary">Blog</a>
+        <a href="contact.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-5">
+        <div class="hidden md:flex items-center gap-3 border-l-2 border-black/10 pl-5">
+          <span class="text-xs text-gray-600 font-medium uppercase tracking-wider">Quick Contact</span>
+          <a href="tel:+919949191912" class="text-primary-blue font-bold text-[15px] hover:text-primary-orange transition-colors duration-300">+91 9949191912</a>
+        </div>
+        <a href="getquote.html" class="gradient-secondary text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg shadow-primary-blue/30 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary-blue/40 relative overflow-hidden group">
+          <span class="relative z-10">Get Quote</span>
+          <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+        </a>
+
+        <!-- Hamburger for Mobile -->
+        <div class="menu-toggle lg:hidden flex flex-col gap-1.5 p-2 cursor-pointer z-[1001]" id="menuToggle">
+          <span class="w-7 h-0.5 bg-gray-900 rounded-sm"></span>
+          <span class="w-7 h-0.5 bg-gray-900 rounded-sm"></span>
+          <span class="w-7 h-0.5 bg-gray-900 rounded-sm"></span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="lg:hidden hidden" id="mobileMenu">
+      <nav class="bg-white/98 backdrop-blur-xl border-t-2 border-black/5 rounded-b-2xl shadow-xl p-5">
+        <ul class="flex flex-col gap-0">
+          <li><a href="index.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Home</a></li>
+          <li><a href="about.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">About</a></li>
+          <li><a href="services.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Services</a></li>
+          <li><a href="gallery.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Gallery</a></li>
+          <li><a href="blogs.html" class="block py-4 px-5 text-primary-blue bg-primary-blue/10 rounded-lg font-medium">Blog</a></li>
+          <li><a href="contact.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="gradient-secondary text-white text-center py-28 px-5 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-[200%] h-[200%] bg-radial-gradient from-white/10 to-transparent" style="animation: rotate 20s linear infinite;"></div>
+    <div class="relative z-10 max-w-4xl mx-auto">
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-5 drop-shadow-lg">Our Blog</h1>
+      <p class="text-xl sm:text-2xl text-white/95 font-normal">Tips, tricks, and insights for a cleaner, healthier home.</p>
+    </div>
+  </section>
+
+  <!-- ===== BLOG SECTION ===== -->
+  <section class="max-w-7xl mx-auto my-20 px-8">
+    <div class="text-center mb-12">
+      <p class="uppercase tracking-[0.3em] text-primary-blue text-xs font-semibold mb-2">Latest Articles</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">Housekeeping Tips & Insights</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Expert advice, cleaning guides, and facility management insights from SLG professionals</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-stack-cards>
+      <!-- Blog Post 1 -->
+      <article class="blog-card bg-white shadow-lg p-8 rounded-2xl text-left transition-all duration-300 border border-black/5 relative overflow-hidden hover:-translate-y-1 hover:shadow-xl group" data-stack-card>
+        <div class="absolute top-0 left-0 w-full h-1 gradient-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+        <div class="mb-4">
+          <span class="text-xs font-semibold text-primary-orange uppercase tracking-wide">Cleaning Tips</span>
+          <span class="text-xs text-gray-400 mx-2">•</span>
+          <span class="text-xs text-gray-400">Jan 15, 2025</span>
+        </div>
+        <h3 class="text-primary-blue mb-4 text-xl font-bold">10 Essential Deep Cleaning Tips for Your Home</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Discover professional deep cleaning techniques used by SLG housekeeping experts. Learn how to tackle tough stains, sanitize bathrooms, and maintain a spotless home between professional cleanings.</p>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xs text-gray-500">✓ Flat Cleaning</span>
+          <span class="text-xs text-gray-500">✓ Villa Cleaning</span>
+        </div>
+        <button onclick="toggleBlogContent('blog1')" class="read-more-btn text-primary-blue font-semibold text-[15px] transition-all duration-300 inline-flex items-center gap-1 hover:text-primary-orange hover:gap-2">Read More →</button>
+        <div id="blog1" class="blog-full-content mt-6 pt-6 border-t border-gray-200">
+          <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+            <p><strong>1. Start from Top to Bottom:</strong> Always clean from the ceiling down to avoid re-soiling cleaned areas. Dust ceiling fans, light fixtures, and corners first, then work your way down to floors.</p>
+            <p><strong>2. Use the Right Tools:</strong> Invest in quality microfiber cloths, extendable dusters, and appropriate cleaning solutions. SLG professionals use specialized tools for different surfaces.</p>
+            <p><strong>3. Focus on High-Touch Areas:</strong> Door handles, light switches, remote controls, and faucets harbor the most germs. Disinfect these areas regularly with appropriate sanitizers.</p>
+            <p><strong>4. Deep Clean Appliances:</strong> Pull out your refrigerator and clean behind it. Run empty dishwasher and washing machine cycles with vinegar to remove buildup and odors.</p>
+            <p><strong>5. Don't Forget Vents and Filters:</strong> Clean air conditioner vents, exhaust fans, and replace filters. This improves air quality and reduces allergens in your home.</p>
+            <p><strong>6. Tackle Grout and Tiles:</strong> Use a grout brush and specialized cleaner for bathroom and kitchen tiles. This prevents mold growth and maintains a fresh appearance.</p>
+            <p><strong>7. Clean Inside Cabinets:</strong> Empty and wipe down all cabinets, drawers, and storage spaces. This is often overlooked but essential for a thorough deep clean.</p>
+            <p><strong>8. Wash All Fabrics:</strong> Curtains, cushion covers, and removable upholstery should be washed or professionally cleaned. SLG offers specialized upholstery cleaning services.</p>
+            <p><strong>9. Sanitize Trash Areas:</strong> Clean and disinfect trash cans, recycling bins, and their surrounding areas to prevent odors and bacteria buildup.</p>
+            <p><strong>10. Schedule Regular Professional Cleanings:</strong> While DIY maintenance is important, professional deep cleaning every 3-6 months ensures your home stays in top condition. SLG's trained team uses commercial-grade equipment and eco-friendly products for superior results.</p>
+            <p class="mt-4"><strong>Need Professional Help?</strong> SLG Housekeeping Services offers comprehensive deep cleaning for flats and villas in Visakhapatnam. Our team follows these proven techniques and more to deliver spotless results. <a href="getquote.html" class="text-primary-blue hover:text-primary-orange font-semibold">Get a free quote today!</a></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="blog-card bg-white shadow-lg p-8 rounded-2xl text-left transition-all duration-300 border border-black/5 relative overflow-hidden hover:-translate-y-1 hover:shadow-xl group" data-stack-card>
+        <div class="absolute top-0 left-0 w-full h-1 gradient-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+        <div class="mb-4">
+          <span class="text-xs font-semibold text-primary-orange uppercase tracking-wide">Service Guide</span>
+          <span class="text-xs text-gray-400 mx-2">•</span>
+          <span class="text-xs text-gray-400">Jan 10, 2025</span>
+        </div>
+        <h3 class="text-primary-blue mb-4 text-xl font-bold">Why Professional Water Tank Cleaning is Essential</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Water tank sanitization is crucial for health and safety. Learn about SLG's 6-stage cleaning process, why DIY cleaning isn't enough, and how regular maintenance protects your family from waterborne diseases.</p>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xs text-gray-500">✓ Water Tank Sanitization</span>
+          <span class="text-xs text-gray-500">✓ Health & Safety</span>
+        </div>
+        <button onclick="toggleBlogContent('blog2')" class="read-more-btn text-primary-blue font-semibold text-[15px] transition-all duration-300 inline-flex items-center gap-1 hover:text-primary-orange hover:gap-2">Read More →</button>
+        <div id="blog2" class="blog-full-content mt-6 pt-6 border-t border-gray-200">
+          <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+            <p><strong>The Hidden Dangers in Your Water Tank:</strong> Over time, water tanks accumulate sediment, algae, bacteria, and even harmful pathogens. Without proper cleaning, these contaminants can cause serious health issues including gastrointestinal problems, skin infections, and waterborne diseases.</p>
+            <p><strong>Why DIY Cleaning Isn't Enough:</strong> Simply draining and rinsing your water tank doesn't remove stubborn sludge, biofilm, or mineral deposits. Professional cleaning requires specialized equipment, proper sanitization chemicals, and safety protocols that only trained professionals can provide.</p>
+            <p><strong>SLG's 6-Stage Water Tank Cleaning Process:</strong></p>
+            <ol class="list-decimal list-inside space-y-2 ml-4">
+              <li><strong>Complete Draining:</strong> We safely drain all water from the tank, ensuring no contamination enters your plumbing system.</li>
+              <li><strong>Sludge Removal:</strong> Our team manually removes all accumulated sediment, debris, and sludge from the tank bottom.</li>
+              <li><strong>Scrubbing & Vacuuming:</strong> We use specialized brushes and industrial vacuums to clean walls, corners, and hard-to-reach areas.</li>
+              <li><strong>High-Pressure Washing:</strong> Professional pressure washing removes stubborn deposits and biofilm from all surfaces.</li>
+              <li><strong>Disinfection:</strong> We apply approved disinfectants that kill bacteria, viruses, and algae without leaving harmful residues.</li>
+              <li><strong>Final Rinse & Quality Check:</strong> A thorough rinse ensures no cleaning chemicals remain, followed by water quality testing.</li>
+            </ol>
+            <p><strong>Recommended Cleaning Frequency:</strong> Residential water tanks should be cleaned every 6-12 months, while commercial tanks may require quarterly cleaning depending on usage and water quality.</p>
+            <p><strong>Benefits of Professional Cleaning:</strong> Regular professional cleaning ensures safe drinking water, extends tank lifespan, improves water pressure, prevents foul odors, and protects your family's health.</p>
+            <p class="mt-4"><strong>Ready to Schedule?</strong> SLG Housekeeping Services provides comprehensive water tank sanitization in Visakhapatnam. Our certified technicians follow strict safety protocols and use only approved cleaning agents. <a href="contact.html" class="text-primary-blue hover:text-primary-orange font-semibold">Contact us today</a> to schedule your water tank cleaning!</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 3 -->
+      <article class="blog-card bg-white shadow-lg p-8 rounded-2xl text-left transition-all duration-300 border border-black/5 relative overflow-hidden hover:-translate-y-1 hover:shadow-xl group" data-stack-card>
+        <div class="absolute top-0 left-0 w-full h-1 gradient-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+        <div class="mb-4">
+          <span class="text-xs font-semibold text-primary-orange uppercase tracking-wide">Eco-Friendly</span>
+          <span class="text-xs text-gray-400 mx-2">•</span>
+          <span class="text-xs text-gray-400">Jan 5, 2025</span>
+        </div>
+        <h3 class="text-primary-blue mb-4 text-xl font-bold">Eco-Friendly Cleaning: Safe for Your Family & Environment</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">SLG uses only eco-friendly, kid-safe cleaning products. Discover how green cleaning solutions effectively remove dirt and germs while protecting your family's health and the environment.</p>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xs text-gray-500">✓ Eco-Friendly</span>
+          <span class="text-xs text-gray-500">✓ Safe Products</span>
+        </div>
+        <button onclick="toggleBlogContent('blog3')" class="read-more-btn text-primary-blue font-semibold text-[15px] transition-all duration-300 inline-flex items-center gap-1 hover:text-primary-orange hover:gap-2">Read More →</button>
+        <div id="blog3" class="blog-full-content mt-6 pt-6 border-t border-gray-200">
+          <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+            <p><strong>Why Eco-Friendly Cleaning Matters:</strong> Traditional cleaning products often contain harsh chemicals like ammonia, bleach, and phosphates that can cause respiratory issues, skin irritation, and environmental damage. SLG prioritizes your family's health and environmental responsibility.</p>
+            <p><strong>What Makes SLG's Products Eco-Friendly:</strong></p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li><strong>Biodegradable Formulas:</strong> Our cleaning solutions break down naturally without harming water systems or soil.</li>
+              <li><strong>No Toxic Chemicals:</strong> We avoid ammonia, chlorine, phthalates, and other harmful substances.</li>
+              <li><strong>Plant-Based Ingredients:</strong> Many of our products use natural plant extracts and essential oils.</li>
+              <li><strong>Kid & Pet Safe:</strong> All products are safe for use around children and pets.</li>
+              <li><strong>Low VOCs:</strong> Reduced volatile organic compounds mean better indoor air quality.</li>
+            </ul>
+            <p><strong>Effectiveness Without Compromise:</strong> Some people worry that eco-friendly products aren't as effective. However, modern green cleaning solutions are just as powerful at removing dirt, stains, and germs. SLG's professional-grade eco-friendly products deliver superior results while being gentle on surfaces and health.</p>
+            <p><strong>Environmental Benefits:</strong> By choosing eco-friendly cleaning, you're reducing water pollution, protecting aquatic life, improving indoor air quality, and reducing your carbon footprint. Every cleaning service makes a difference!</p>
+            <p><strong>SLG's Commitment:</strong> We're committed to using only certified eco-friendly products across all our services. Our team is trained in green cleaning techniques that maximize effectiveness while minimizing environmental impact.</p>
+            <p class="mt-4"><strong>Experience Green Cleaning:</strong> All SLG housekeeping services use eco-friendly, safe products. Whether it's flat cleaning, villa cleaning, or commercial services, your health and the environment are our priority. <a href="services.html" class="text-primary-blue hover:text-primary-orange font-semibold">Explore our services</a> to learn more!</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 4 -->
+      <article class="blog-card bg-white shadow-lg p-8 rounded-2xl text-left transition-all duration-300 border border-black/5 relative overflow-hidden hover:-translate-y-1 hover:shadow-xl group" data-stack-card>
+        <div class="absolute top-0 left-0 w-full h-1 gradient-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+        <div class="mb-4">
+          <span class="text-xs font-semibold text-primary-orange uppercase tracking-wide">Commercial</span>
+          <span class="text-xs text-gray-400 mx-2">•</span>
+          <span class="text-xs text-gray-400">Dec 28, 2024</span>
+        </div>
+        <h3 class="text-primary-blue mb-4 text-xl font-bold">Office Cleaning Best Practices for Productivity</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">A clean office environment boosts employee productivity and creates a professional impression. Learn how SLG's commercial housekeeping services help businesses maintain spotless workspaces with minimal disruption.</p>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xs text-gray-500">✓ Commercial Cleaning</span>
+          <span class="text-xs text-gray-500">✓ Office Maintenance</span>
+        </div>
+        <button onclick="toggleBlogContent('blog4')" class="read-more-btn text-primary-blue font-semibold text-[15px] transition-all duration-300 inline-flex items-center gap-1 hover:text-primary-orange hover:gap-2">Read More →</button>
+        <div id="blog4" class="blog-full-content mt-6 pt-6 border-t border-gray-200">
+          <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+            <p><strong>The Impact of Clean Workspaces:</strong> Studies show that employees in clean, organized offices are 15-20% more productive. A well-maintained office also reduces sick days, improves morale, and creates a positive first impression for clients and visitors.</p>
+            <p><strong>Key Areas for Office Cleaning:</strong></p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li><strong>Reception Areas:</strong> First impressions matter. Clean, welcoming reception areas set the tone for your business.</li>
+              <li><strong>Workstations:</strong> Regular sanitization of desks, keyboards, phones, and monitors reduces germ transmission.</li>
+              <li><strong>Common Areas:</strong> Break rooms, kitchens, and meeting rooms require daily attention to maintain hygiene.</li>
+              <li><strong>Restrooms:</strong> Professional restroom cleaning is essential for employee health and satisfaction.</li>
+              <li><strong>Floors & Carpets:</strong> Regular vacuuming and deep cleaning maintain air quality and appearance.</li>
+            </ul>
+            <p><strong>SLG's Commercial Cleaning Approach:</strong> We understand that businesses can't afford downtime. Our commercial housekeeping services are designed to work around your schedule—whether it's early morning, evening, or weekend cleaning. We provide flexible plans that minimize disruption while maintaining impeccable standards.</p>
+            <p><strong>What Sets SLG Apart:</strong> Our commercial cleaning teams are trained in confidentiality protocols, use eco-friendly products safe for office environments, provide detailed cleaning checklists, and offer dedicated account managers for consistent service quality.</p>
+            <p><strong>Customized Cleaning Plans:</strong> Every office is unique. SLG creates tailored cleaning schedules based on your business size, foot traffic, and specific requirements. From daily maintenance to weekly deep cleans, we adapt to your needs.</p>
+            <p class="mt-4"><strong>Boost Your Office Productivity:</strong> Let SLG handle your commercial cleaning so you can focus on business. Our professional team ensures your workspace stays spotless, healthy, and productive. <a href="getquote.html" class="text-primary-blue hover:text-primary-orange font-semibold">Request a quote</a> for your office today!</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 5 -->
+      <article class="blog-card bg-white shadow-lg p-8 rounded-2xl text-left transition-all duration-300 border border-black/5 relative overflow-hidden hover:-translate-y-1 hover:shadow-xl group" data-stack-card>
+        <div class="absolute top-0 left-0 w-full h-1 gradient-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+        <div class="mb-4">
+          <span class="text-xs font-semibold text-primary-orange uppercase tracking-wide">Maintenance</span>
+          <span class="text-xs text-gray-400 mx-2">•</span>
+          <span class="text-xs text-gray-400">Dec 20, 2024</span>
+        </div>
+        <h3 class="text-primary-blue mb-4 text-xl font-bold">Bathroom Deep Cleaning: A Complete Guide</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Bathrooms require special attention to prevent mold, bacteria, and limescale buildup. Explore SLG's multi-stage bathroom sanitization process and learn maintenance tips to keep your bathroom hygienic between professional cleanings.</p>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xs text-gray-500">✓ Bathroom Cleaning</span>
+          <span class="text-xs text-gray-500">✓ Sanitization</span>
+        </div>
+        <button onclick="toggleBlogContent('blog5')" class="read-more-btn text-primary-blue font-semibold text-[15px] transition-all duration-300 inline-flex items-center gap-1 hover:text-primary-orange hover:gap-2">Read More →</button>
+        <div id="blog5" class="blog-full-content mt-6 pt-6 border-t border-gray-200">
+          <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+            <p><strong>Why Bathroom Deep Cleaning is Critical:</strong> Bathrooms are breeding grounds for bacteria, mold, and viruses due to constant moisture. Regular deep cleaning prevents health issues, eliminates odors, and maintains your bathroom's appearance and functionality.</p>
+            <p><strong>SLG's Multi-Stage Bathroom Sanitization Process:</strong></p>
+            <ol class="list-decimal list-inside space-y-2 ml-4">
+              <li><strong>Pre-Cleaning Assessment:</strong> We inspect all surfaces, identify problem areas, and plan the cleaning approach.</li>
+              <li><strong>Dusting & Dry Cleaning:</strong> Remove dust, hair, and debris from all surfaces before wet cleaning.</li>
+              <li><strong>Tile & Grout Cleaning:</strong> Specialized cleaners and brushes remove soap scum, mold, and stains from tiles and grout lines.</li>
+              <li><strong>Fixture Sanitization:</strong> Taps, showerheads, and fixtures are cleaned and disinfected to remove limescale and bacteria.</li>
+              <li><strong>Toilet Deep Clean:</strong> Inside and outside cleaning, including hard-to-reach areas, with powerful disinfectants.</li>
+              <li><strong>Mirror & Glass Polish:</strong> Streak-free cleaning of mirrors and glass surfaces for a sparkling finish.</li>
+              <li><strong>Floor Sanitization:</strong> Thorough scrubbing and mopping with disinfectant solutions.</li>
+              <li><strong>Final Disinfection:</strong> Application of hospital-grade disinfectants to kill remaining germs and bacteria.</li>
+            </ol>
+            <p><strong>Maintenance Tips Between Professional Cleanings:</strong></p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li>Wipe down surfaces after each use to prevent water spots and soap buildup</li>
+              <li>Use a squeegee on shower walls and glass doors after showering</li>
+              <li>Keep bathroom well-ventilated to reduce moisture and prevent mold</li>
+              <li>Clean toilet bowl weekly with appropriate cleaners</li>
+              <li>Replace shower curtains and bath mats regularly</li>
+            </ul>
+            <p><strong>Common Bathroom Cleaning Challenges:</strong> Hard water stains, soap scum buildup, mold in grout, and limescale on fixtures require professional-grade products and techniques. SLG's team has the expertise and tools to tackle even the toughest bathroom cleaning challenges.</p>
+            <p class="mt-4"><strong>Professional Bathroom Deep Cleaning:</strong> SLG offers comprehensive bathroom deep cleaning services in Visakhapatnam. Our trained professionals use eco-friendly products and proven techniques to leave your bathroom spotless and hygienic. <a href="services.html" class="text-primary-blue hover:text-primary-orange font-semibold">Learn more about our bathroom cleaning services</a>!</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 6 -->
+      <article class="blog-card bg-white shadow-lg p-8 rounded-2xl text-left transition-all duration-300 border border-black/5 relative overflow-hidden hover:-translate-y-1 hover:shadow-xl group" data-stack-card>
+        <div class="absolute top-0 left-0 w-full h-1 gradient-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+        <div class="mb-4">
+          <span class="text-xs font-semibold text-primary-orange uppercase tracking-wide">Facility Care</span>
+          <span class="text-xs text-gray-400 mx-2">•</span>
+          <span class="text-xs text-gray-400">Dec 15, 2024</span>
+        </div>
+        <h3 class="text-primary-blue mb-4 text-xl font-bold">Glass & Facade Cleaning: Maintaining Your Building's Appeal</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Clean windows and facades enhance your property's curb appeal and let natural light in. Discover professional glass cleaning techniques, when to schedule facade maintenance, and how SLG keeps commercial and residential buildings looking pristine.</p>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xs text-gray-500">✓ Glass Cleaning</span>
+          <span class="text-xs text-gray-500">✓ Facade Maintenance</span>
+        </div>
+        <button onclick="toggleBlogContent('blog6')" class="read-more-btn text-primary-blue font-semibold text-[15px] transition-all duration-300 inline-flex items-center gap-1 hover:text-primary-orange hover:gap-2">Read More →</button>
+        <div id="blog6" class="blog-full-content mt-6 pt-6 border-t border-gray-200">
+          <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+            <p><strong>The Importance of Clean Windows & Facades:</strong> First impressions matter. Clean windows and building facades significantly enhance your property's appearance, increase natural light, improve visibility, and maintain property value. For commercial properties, it's essential for professional image.</p>
+            <p><strong>Professional Glass Cleaning Techniques:</strong> SLG uses specialized techniques for streak-free results:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li><strong>Pure Water System:</strong> Deionized water prevents streaks and spots</li>
+              <li><strong>Microfiber Technology:</strong> Specialized cloths that don't leave lint or residue</li>
+              <li><strong>Proper Tools:</strong> Squeegees, extension poles, and safety equipment for high-rise cleaning</li>
+              <li><strong>Eco-Friendly Solutions:</strong> Safe, effective cleaners that don't harm glass or environment</li>
+            </ul>
+            <p><strong>Facade Cleaning Services:</strong> Building facades accumulate dirt, pollution, algae, and stains over time. SLG's facade cleaning services include:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li>Pressure washing for concrete and stone surfaces</li>
+              <li>Soft washing for painted surfaces and delicate materials</li>
+              <li>Algae and mold removal</li>
+              <li>Paint touch-ups and surface restoration</li>
+            </ul>
+            <p><strong>When to Schedule Professional Cleaning:</strong> Residential properties should schedule glass cleaning every 3-6 months, while commercial buildings may need monthly or quarterly service. Facade cleaning is typically needed annually or bi-annually depending on location and pollution levels.</p>
+            <p><strong>Safety First:</strong> High-rise window and facade cleaning requires proper safety equipment, training, and insurance. SLG's team is fully trained in safety protocols and uses professional-grade equipment for all elevated cleaning work.</p>
+            <p class="mt-4"><strong>Maintain Your Building's Appeal:</strong> SLG provides professional glass and facade cleaning services for both residential and commercial properties in Visakhapatnam. Our team ensures your building always looks its best. <a href="contact.html" class="text-primary-blue hover:text-primary-orange font-semibold">Contact us</a> to schedule your building maintenance!</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 7 -->
+      <article class="blog-card bg-white shadow-lg p-8 rounded-2xl text-left transition-all duration-300 border border-black/5 relative overflow-hidden hover:-translate-y-1 hover:shadow-xl group" data-stack-card>
+        <div class="absolute top-0 left-0 w-full h-1 gradient-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+        <div class="mb-4">
+          <span class="text-xs font-semibold text-primary-orange uppercase tracking-wide">Upholstery Care</span>
+          <span class="text-xs text-gray-400 mx-2">•</span>
+          <span class="text-xs text-gray-400">Dec 10, 2024</span>
+        </div>
+        <h3 class="text-primary-blue mb-4 text-xl font-bold">Sofa & Upholstery Cleaning: Extend Furniture Life</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Regular upholstery cleaning removes allergens, dust mites, and stains while preserving your furniture's appearance. Learn about SLG's advanced steam cleaning technology and why professional care is essential for expensive sofas and cushions.</p>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xs text-gray-500">✓ Sofa Cleaning</span>
+          <span class="text-xs text-gray-500">✓ Upholstery Care</span>
+        </div>
+        <button onclick="toggleBlogContent('blog7')" class="read-more-btn text-primary-blue font-semibold text-[15px] transition-all duration-300 inline-flex items-center gap-1 hover:text-primary-orange hover:gap-2">Read More →</button>
+        <div id="blog7" class="blog-full-content mt-6 pt-6 border-t border-gray-200">
+          <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+            <p><strong>Why Upholstery Cleaning is Essential:</strong> Your sofas, chairs, and cushions accumulate dust, allergens, pet dander, food particles, and bacteria over time. Regular professional cleaning not only maintains appearance but also improves indoor air quality and extends furniture lifespan.</p>
+            <p><strong>SLG's Advanced Steam Cleaning Technology:</strong> We use professional-grade steam cleaning equipment that:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li><strong>Deep Penetration:</strong> Steam reaches deep into fabric fibers to remove embedded dirt</li>
+              <li><strong>Sanitization:</strong> High-temperature steam kills bacteria, dust mites, and allergens</li>
+              <li><strong>Stain Removal:</strong> Specialized pre-treatment and extraction remove tough stains</li>
+              <li><strong>Fabric Protection:</strong> Safe for delicate fabrics including silk, velvet, and leather</li>
+              <li><strong>Quick Drying:</strong> Powerful extraction reduces drying time significantly</li>
+            </ul>
+            <p><strong>What Gets Cleaned:</strong> SLG's upholstery cleaning service covers sofas, armchairs, dining chairs, ottomans, cushions, throw pillows, curtains, and even car interiors. We assess each fabric type and use appropriate cleaning methods.</p>
+            <p><strong>Benefits of Professional Cleaning:</strong></p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li>Removes allergens and improves air quality for allergy sufferers</li>
+              <li>Eliminates odors from pets, food, and everyday use</li>
+              <li>Restores original color and appearance</li>
+              <li>Extends furniture life by preventing fabric deterioration</li>
+              <li>Protects your investment in expensive furniture</li>
+            </ul>
+            <p><strong>Cleaning Frequency:</strong> High-traffic furniture should be professionally cleaned every 6-12 months. Homes with pets, children, or allergy sufferers may benefit from more frequent cleaning (every 3-6 months).</p>
+            <p><strong>Pre-Cleaning Preparation:</strong> Before our team arrives, remove cushions and personal items. We'll handle the rest, including fabric assessment, spot treatment, deep cleaning, and final inspection.</p>
+            <p class="mt-4"><strong>Restore Your Furniture:</strong> SLG's professional upholstery cleaning services in Visakhapatnam use advanced technology to keep your furniture looking and smelling fresh. <a href="services.html" class="text-primary-blue hover:text-primary-orange font-semibold">Book your sofa cleaning service</a> today!</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 8 -->
+      <article class="blog-card bg-white shadow-lg p-8 rounded-2xl text-left transition-all duration-300 border border-black/5 relative overflow-hidden hover:-translate-y-1 hover:shadow-xl group" data-stack-card>
+        <div class="absolute top-0 left-0 w-full h-1 gradient-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+        <div class="mb-4">
+          <span class="text-xs font-semibold text-primary-orange uppercase tracking-wide">Service Guide</span>
+          <span class="text-xs text-gray-400 mx-2">•</span>
+          <span class="text-xs text-gray-400">Dec 5, 2024</span>
+        </div>
+        <h3 class="text-primary-blue mb-4 text-xl font-bold">Choosing the Right Cleaning Service for Your Home</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Not all cleaning services are created equal. Learn what to look for when hiring housekeeping professionals: background-verified staff, eco-friendly products, transparent pricing, and quality guarantees. Discover why SLG stands out in Visakhapatnam.</p>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xs text-gray-500">✓ Service Selection</span>
+          <span class="text-xs text-gray-500">✓ Quality Standards</span>
+        </div>
+        <button onclick="toggleBlogContent('blog8')" class="read-more-btn text-primary-blue font-semibold text-[15px] transition-all duration-300 inline-flex items-center gap-1 hover:text-primary-orange hover:gap-2">Read More →</button>
+        <div id="blog8" class="blog-full-content mt-6 pt-6 border-t border-gray-200">
+          <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+            <p><strong>What to Look for in a Cleaning Service:</strong> Choosing the right housekeeping service is crucial for your peace of mind and home's cleanliness. Here are key factors to consider:</p>
+            <p><strong>1. Background-Verified Staff:</strong> Your home's security is paramount. SLG conducts thorough background checks on all team members. Our staff wear uniforms, carry ID cards, and are fully insured, giving you complete confidence.</p>
+            <p><strong>2. Eco-Friendly Products:</strong> Safe cleaning products protect your family and pets. SLG uses only eco-friendly, kid-safe solutions that are effective yet gentle on surfaces and health.</p>
+            <p><strong>3. Transparent Pricing:</strong> No hidden fees or surprise charges. SLG provides clear, upfront quotes with detailed breakdowns of what's included. You know exactly what you're paying for.</p>
+            <p><strong>4. Quality Guarantees:</strong> Professional services should stand behind their work. SLG offers quality guarantees and will return to address any concerns at no extra charge.</p>
+            <p><strong>5. Experience & Training:</strong> Look for companies with proven track records. SLG has been serving Visakhapatnam since 2015 with over 1,000 completed projects. Our team receives ongoing training in the latest cleaning techniques.</p>
+            <p><strong>6. Comprehensive Services:</strong> A good cleaning service should handle all your needs—from regular maintenance to deep cleaning, specialized services, and emergency cleaning.</p>
+            <p><strong>7. Professional Equipment:</strong> Quality results require professional-grade tools. SLG brings all necessary equipment, from industrial vacuums to specialized cleaning solutions.</p>
+            <p><strong>8. Customer Service:</strong> Responsive communication and dedicated coordinators make a huge difference. SLG assigns dedicated relationship managers for recurring clients.</p>
+            <p><strong>Why SLG Stands Out:</strong> With 9+ years of experience, 500+ happy clients, and 95% customer retention rate, SLG has built a reputation for reliability, professionalism, and quality. We combine hotel-grade standards with personalized service, making us Visakhapatnam's trusted housekeeping partner.</p>
+            <p class="mt-4"><strong>Make the Right Choice:</strong> Don't compromise on your home's cleanliness and your family's safety. Choose SLG Housekeeping Services for professional, reliable, and affordable cleaning solutions. <a href="about.html" class="text-primary-blue hover:text-primary-orange font-semibold">Learn more about SLG</a> or <a href="getquote.html" class="text-primary-blue hover:text-primary-orange font-semibold">get a free quote</a> today!</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 9 -->
+      <article class="blog-card bg-white shadow-lg p-8 rounded-2xl text-left transition-all duration-300 border border-black/5 relative overflow-hidden hover:-translate-y-1 hover:shadow-xl group" data-stack-card>
+        <div class="absolute top-0 left-0 w-full h-1 gradient-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+        <div class="mb-4">
+          <span class="text-xs font-semibold text-primary-orange uppercase tracking-wide">Industrial</span>
+          <span class="text-xs text-gray-400 mx-2">•</span>
+          <span class="text-xs text-gray-400">Nov 28, 2024</span>
+        </div>
+        <h3 class="text-primary-blue mb-4 text-xl font-bold">Industrial Floor Care: Safety & Compliance</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Warehouses and factories require specialized cleaning protocols. Learn how SLG's industrial floor care services maintain safety standards, comply with regulations, and keep production facilities spotless without disrupting operations.</p>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xs text-gray-500">✓ Industrial Cleaning</span>
+          <span class="text-xs text-gray-500">✓ Safety Protocols</span>
+        </div>
+        <button onclick="toggleBlogContent('blog9')" class="read-more-btn text-primary-blue font-semibold text-[15px] transition-all duration-300 inline-flex items-center gap-1 hover:text-primary-orange hover:gap-2">Read More →</button>
+        <div id="blog9" class="blog-full-content mt-6 pt-6 border-t border-gray-200">
+          <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+            <p><strong>Why Industrial Cleaning is Different:</strong> Industrial facilities like warehouses, factories, and production plants have unique cleaning requirements. They need specialized equipment, safety protocols, and cleaning schedules that don't disrupt operations while maintaining compliance with health and safety regulations.</p>
+            <p><strong>SLG's Industrial Floor Care Services:</strong></p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li><strong>Heavy-Duty Floor Cleaning:</strong> Industrial scrubbers and sweepers for large floor areas</li>
+              <li><strong>Oil & Grease Removal:</strong> Specialized degreasing for manufacturing areas</li>
+              <li><strong>Dust Control:</strong> HEPA filtration systems to maintain air quality</li>
+              <li><strong>Waste Management:</strong> Proper disposal of industrial waste and cleaning materials</li>
+              <li><strong>Equipment Cleaning:</strong> Safe cleaning around machinery and production lines</li>
+            </ul>
+            <p><strong>Safety & Compliance Standards:</strong> SLG's industrial cleaning team is trained in:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li>OSHA safety protocols and regulations</li>
+              <li>Hazardous material handling</li>
+              <li>Lockout/tagout procedures for equipment safety</li>
+              <li>Personal protective equipment (PPE) requirements</li>
+              <li>Emergency response procedures</li>
+            </ul>
+            <p><strong>Minimizing Operational Disruption:</strong> We understand that production can't stop. SLG works around your schedule—whether it's after-hours cleaning, weekend maintenance, or phased cleaning during low-production periods. Our flexible approach ensures your facility stays clean without impacting operations.</p>
+            <p><strong>Types of Industrial Facilities We Serve:</strong> SLG provides industrial cleaning for warehouses, manufacturing plants, distribution centers, food processing facilities, pharmaceutical plants, and more. Each facility type requires specific cleaning protocols that we're trained to handle.</p>
+            <p><strong>Regular Maintenance Programs:</strong> Consistent cleaning prevents buildup, reduces safety hazards, maintains equipment efficiency, and ensures compliance. SLG offers customized maintenance schedules tailored to your facility's needs and production cycles.</p>
+            <p class="mt-4"><strong>Industrial Cleaning Solutions:</strong> Keep your facility safe, compliant, and efficient with SLG's professional industrial floor care services. Our trained team follows strict safety protocols while delivering superior cleaning results. <a href="contact.html" class="text-primary-blue hover:text-primary-orange font-semibold">Contact us</a> to discuss your industrial cleaning needs!</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-300 pt-16 pb-8 mt-20 relative">
+    <div class="absolute top-0 left-0 right-0 h-1 gradient-secondary"></div>
+    <div class="max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="text-2xl font-bold mb-4 gradient-text">SLG Housekeeping & Facility Services</h3>
+        <p class="leading-relaxed text-gray-400 text-sm">Providing reliable cleaning solutions since 2015. We care for your comfort and hygiene.</p>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold text-white mb-5 relative pb-2.5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 gradient-secondary after:rounded-sm">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Home</a></li>
+          <li><a href="about.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">About</a></li>
+          <li><a href="services.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Services</a></li>
+          <li><a href="gallery.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Gallery</a></li>
+          <li><a href="blogs.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Blog</a></li>
+          <li><a href="contact.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold text-white mb-5 relative pb-2.5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 gradient-secondary after:rounded-sm">Contact Us</h4>
+        <ul class="space-y-2 text-gray-400 text-sm leading-relaxed">
+          <li><strong class="text-white font-semibold">Phone/WhatsApp:</strong> <a href="tel:+919949191912" class="hover:text-white transition-colors">+91 99491 91912</a> | <a href="https://wa.me/9949191912" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:text-green-300">WhatsApp</a></li>
+          <li><strong class="text-white font-semibold">Email:</strong> <a href="mailto:slghousekeepingservices@gmail.com" class="hover:text-white transition-colors">slghousekeepingservices@gmail.com</a></li>
+          <li><strong class="text-white font-semibold">Address:</strong> D.NO. 32-3-5/1, Bowdara Road, Bhupesh Nagar, Allipuram, Visakhapatnam – 530004, Andhra Pradesh</li>
+        </ul>
+        <div class="mt-4 flex gap-3">
+          <a href="https://www.facebook.com/profile.php?id=61554209671782" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/slg_hk_services_24by7/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UC-id_34vRiVE7S2UUdLTSCA" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center mt-12 pt-6 border-t border-white/10 text-sm text-gray-500">
+      <p>© 2015–2025 SLG Housekeeping & Facility Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPT FOR NAV & SCROLL ANIMATION ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('open');
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Blog Content Toggle Function
+    function toggleBlogContent(blogId) {
+      const content = document.getElementById(blogId);
+      const button = content.previousElementSibling;
+      
+      if (content.classList.contains('expanded')) {
+        content.classList.remove('expanded');
+        button.classList.remove('expanded');
+        button.innerHTML = 'Read More →';
+        // Smooth scroll to top of article
+        content.closest('article').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        content.classList.add('expanded');
+        button.classList.add('expanded');
+        button.innerHTML = 'Read Less';
+        // Smooth scroll to show expanded content
+        setTimeout(() => {
+          content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+      }
+    }
+  </script>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "SLG Housekeeping & Facility Services Blog",
+    "description": "Cleaning tips, maintenance guides, and expert housekeeping advice",
+    "url": "https://www.slghk.in/blogs.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "SLG Housekeeping & Facility Services",
+      "url": "https://www.slghk.in",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.slghk.in/images/Logo.png"
+      }
+    }
+    }
+  </script>
+
+</body>
+</html>

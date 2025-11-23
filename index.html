@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLG Housekeeping & Facility Services | Home</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional housekeeping and facility services in Visakhapatnam. Expert cleaning for flats, villas, offices, and commercial spaces. Eco-friendly, reliable, and affordable since 2015." />
+  <meta name="keywords" content="housekeeping services Visakhapatnam, cleaning services, facility management, flat cleaning, villa cleaning, office cleaning, commercial cleaning, water tank cleaning" />
+  <meta name="author" content="SLG Housekeeping & Facility Services" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.slghk.in/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.slghk.in/" />
+  <meta property="og:title" content="SLG Housekeeping & Facility Services | Professional Cleaning in Visakhapatnam" />
+  <meta property="og:description" content="Professional housekeeping and facility services in Visakhapatnam. Expert cleaning for flats, villas, offices, and commercial spaces. Eco-friendly, reliable, and affordable since 2015." />
+  <meta property="og:image" content="https://www.slghk.in/images/Logo.png" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="SLG Housekeeping & Facility Services" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.slghk.in/" />
+  <meta name="twitter:title" content="SLG Housekeeping & Facility Services | Professional Cleaning" />
+  <meta name="twitter:description" content="Professional housekeeping and facility services in Visakhapatnam. Expert cleaning for flats, villas, offices, and commercial spaces." />
+  <meta name="twitter:image" content="https://www.slghk.in/images/Logo.png" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/Logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/Logo.png" />
+  <link rel="apple-touch-icon" href="images/Logo.png" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            'primary-blue': '#1a3dbf',
+            'primary-orange': '#ff4d00',
+          },
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .gradient-secondary {
+      background: linear-gradient(135deg, #1a3dbf 0%, #ff4d00 100%);
+    }
+    
+    .gradient-hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #1a3dbf 0%, #ff4d00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('images/g4.png') center/cover no-repeat;
+      opacity: 0.25;
+      z-index: 1;
+      animation: heroTexture 22s ease-in-out infinite;
+      transform: scale(1.15);
+    }
+    
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+      z-index: 2;
+    }
+
+    @keyframes heroTexture {
+      0% {
+        transform: scale(1.15) translateY(0);
+      }
+      50% {
+        transform: scale(1.2) translateY(-25px);
+      }
+      100% {
+        transform: scale(1.15) translateY(0);
+      }
+    }
+
+    .hero h1 {
+      text-shadow: 0 4px 20px rgba(0,0,0,0.25);
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      text-shadow: 0 2px 12px rgba(0,0,0,0.25);
+    }
+    
+    .menu-toggle span {
+      transition: all 0.3s ease;
+    }
+    
+    .menu-toggle.open span:nth-child(1) {
+      transform: rotate(45deg) translate(10px, 10px);
+      background: #1a3dbf;
+    }
+    
+    .menu-toggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .menu-toggle.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+      background: #1a3dbf;
+    }
+    
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+    
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .hero-content {
+      animation: fadeInUp 1s ease;
+    }
+    
+    .about-slider input[type="radio"] {
+      display: none;
+    }
+    
+    #about-slide-1:checked ~ .about-slider-cards #about-card-1,
+    #about-slide-2:checked ~ .about-slider-cards #about-card-2,
+    #about-slide-3:checked ~ .about-slider-cards #about-card-3 {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+      z-index: 2;
+    }
+    
+    #about-slide-1:checked ~ .about-slider-cards #about-card-2,
+    #about-slide-2:checked ~ .about-slider-cards #about-card-3,
+    #about-slide-3:checked ~ .about-slider-cards #about-card-1 {
+      transform: translateX(45%) scale(0.82);
+      opacity: 0.35;
+      z-index: 1;
+    }
+    
+    #about-slide-1:checked ~ .about-slider-cards #about-card-3,
+    #about-slide-2:checked ~ .about-slider-cards #about-card-1,
+    #about-slide-3:checked ~ .about-slider-cards #about-card-2 {
+      transform: translateX(-45%) scale(0.82);
+      opacity: 0.35;
+      z-index: 1;
+    }
+    
+    @media (max-width: 600px) {
+      #about-slide-1:checked ~ .about-slider-cards #about-card-2,
+      #about-slide-2:checked ~ .about-slider-cards #about-card-3,
+      #about-slide-3:checked ~ .about-slider-cards #about-card-1 {
+        transform: translateX(30%) scale(0.88);
+      }
+      
+      #about-slide-1:checked ~ .about-slider-cards #about-card-3,
+      #about-slide-2:checked ~ .about-slider-cards #about-card-1,
+      #about-slide-3:checked ~ .about-slider-cards #about-card-2 {
+        transform: translateX(-30%) scale(0.88);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+  <!-- ===== HEADER ===== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl shadow-sm border-b border-black/5 transition-all duration-300 hover:shadow-md">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-8 flex items-center justify-between py-4">
+      <div class="flex items-center gap-4">
+        <img src="images/Logo.png" alt="SLG Logo" class="w-12 h-12 rounded-xl shadow-sm transition-transform duration-300 hover:scale-105 hover:rotate-3" />
+        <div>
+          <h2 class="text-xl font-bold gradient-text mb-0.5 tracking-tight">
+            Housekeeping & Facility Services
+          </h2>
+          <p class="text-sm text-gray-600 font-medium">Visakhapatnam</p>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-8" id="navbar">
+        <a href="index.html" class="text-primary-blue font-medium text-[15px] relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-gradient-secondary after:transition-all after:duration-300">Home</a>
+        <a href="about.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">About</a>
+        <a href="services.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Services</a>
+        <a href="gallery.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Gallery</a>
+        <a href="blogs.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Blog</a>
+        <a href="contact.html" class="text-gray-900 font-medium text-[15px] relative py-1 hover:text-primary-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-secondary hover:after:w-full after:transition-all after:duration-300">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-5">
+        <div class="hidden md:flex items-center gap-3 border-l-2 border-black/10 pl-5">
+          <span class="text-xs text-gray-600 font-medium uppercase tracking-wider">Quick Contact</span>
+          <a href="tel:+919949191912" class="text-primary-blue font-bold text-[15px] hover:text-primary-orange transition-colors duration-300">+91 99491 91912</a>
+          <a href="https://wa.me/9949191912" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-700 transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+          </a>
+        </div>
+        <a href="getquote.html" class="gradient-secondary text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg shadow-primary-blue/30 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary-blue/40 relative overflow-hidden group">
+          <span class="relative z-10">Get Quote</span>
+          <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+        </a>
+
+        <!-- Hamburger for Mobile -->
+        <div class="menu-toggle lg:hidden flex flex-col gap-1.5 p-2 cursor-pointer z-[1001]" id="menuToggle">
+          <span class="w-7 h-0.5 bg-gray-900 rounded-sm"></span>
+          <span class="w-7 h-0.5 bg-gray-900 rounded-sm"></span>
+          <span class="w-7 h-0.5 bg-gray-900 rounded-sm"></span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="lg:hidden hidden" id="mobileMenu">
+      <nav class="bg-white/98 backdrop-blur-xl border-t-2 border-black/5 rounded-b-2xl shadow-xl p-5">
+        <ul class="flex flex-col gap-0">
+          <li><a href="index.html" class="block py-4 px-5 text-primary-blue bg-primary-blue/10 rounded-lg font-medium">Home</a></li>
+          <li><a href="about.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">About</a></li>
+          <li><a href="services.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Services</a></li>
+          <li><a href="gallery.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Gallery</a></li>
+          <li><a href="blogs.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Blog</a></li>
+          <li><a href="contact.html" class="block py-4 px-5 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- <nav class="bg-gray-50 py-4 px-8" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li class="text-gray-900 font-medium" aria-current="page">Home</li>
+      </ol>
+    </div>
+  </nav> -->
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero gradient-hero text-white text-center py-44 px-5 relative overflow-hidden">
+    <div class="hero-content relative z-10 max-w-4xl mx-auto">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-5 leading-tight drop-shadow-lg tracking-tight">Professional Cleaning for Homes & Businesses</h1>
+      <p class="text-xl sm:text-2xl mb-9 opacity-95 font-normal max-w-2xl mx-auto">Trusted since 2015 — Keeping Visakhapatnam clean, one space at a time.</p>
+      <div class="flex flex-wrap justify-center gap-5 mt-9">
+        <a href="services.html" class="gradient-secondary text-white px-10 py-4 rounded-full font-semibold text-base inline-block transition-all duration-300 shadow-xl shadow-primary-blue/35 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-blue/45 relative overflow-hidden group">
+          <span class="relative z-10">Explore Our Services</span>
+          <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+        </a>
+        <a href="getquote.html" class="bg-white/20 backdrop-blur-md text-white px-10 py-4 rounded-full font-semibold text-base inline-block transition-all duration-300 border-2 border-white/30 hover:bg-white/30 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/20">Get a Free Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT US SECTION ===== -->
+  <section class="about-home-section bg-gray-50 py-24 px-8 reveal">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mb-6 gradient-text">About SLG Housekeeping & Facility Services</h2>
+        <p class="text-base text-gray-600 leading-relaxed mb-5">
+          We are a trusted housekeeping and cleaning service provider based in Visakhapatnam,
+          offering professional cleaning for homes, offices, apartments, and commercial properties.
+          With a team of skilled professionals, we ensure spotless results and complete customer satisfaction.
+        </p>
+        <p class="text-base text-gray-600 leading-relaxed mb-8">
+          Since 2015, we've been committed to delivering excellence with eco-friendly products,
+          affordable pricing, and unmatched reliability. Your comfort and hygiene are our top priorities.
+        </p>
+        <a href="about.html" class="gradient-secondary text-white px-8 py-4 rounded-full font-semibold text-base inline-block transition-all duration-300 shadow-xl shadow-primary-blue/35 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-blue/45 relative overflow-hidden group">
+          <span class="relative z-10">Learn More About Us</span>
+          <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+        </a>
+      </div>
+      <div class="about-slider-wrapper relative w-full h-[500px] flex items-center justify-center">
+        <div class="about-slider relative w-full max-w-[520px] h-full flex items-center justify-center" style="transform-style: preserve-3d;">
+          <input type="radio" name="about-slider" id="about-slide-1" checked>
+          <input type="radio" name="about-slider" id="about-slide-2">
+          <input type="radio" name="about-slider" id="about-slide-3">
+
+          <div class="about-slider-cards relative w-full h-full flex items-center justify-center">
+            <label class="about-slider-card absolute w-[68%] h-[88%] left-0 right-0 mx-auto transition-all duration-400 cursor-pointer rounded-2xl overflow-hidden shadow-2xl shadow-primary-blue/18 flex items-center justify-center bg-white" for="about-slide-1" id="about-card-1">
+              <img src="images/g1.png" alt="SLG cleaning project 1" class="w-full h-full object-contain bg-gray-50">
+            </label>
+            <label class="about-slider-card absolute w-[68%] h-[88%] left-0 right-0 mx-auto transition-all duration-400 cursor-pointer rounded-2xl overflow-hidden shadow-2xl shadow-primary-blue/18 flex items-center justify-center bg-white" for="about-slide-2" id="about-card-2">
+              <img src="images/g2.png" alt="SLG cleaning project 2" class="w-full h-full object-contain bg-gray-50">
+            </label>
+            <label class="about-slider-card absolute w-[68%] h-[88%] left-0 right-0 mx-auto transition-all duration-400 cursor-pointer rounded-2xl overflow-hidden shadow-2xl shadow-primary-blue/18 flex items-center justify-center bg-white hover:shadow-3xl hover:shadow-primary-blue/30" for="about-slide-3" id="about-card-3">
+              <img src="images/g3.png" alt="SLG cleaning project 3" class="w-full h-full object-contain bg-gray-50">
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR SERVICES SECTION ===== -->
+  <section class="services-section py-24 px-8 text-center reveal">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Our Services</h2>
+      <p class="text-lg text-gray-600 mb-12">Premium cleaning solutions tailored to your needs</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-9 mt-12" data-stack-cards>
+        <div class="service-card bg-white rounded-2xl shadow-lg transition-all duration-400 overflow-hidden relative border border-black/5 hover:-translate-y-2.5 hover:scale-[1.02] hover:shadow-2xl group" data-stack-card>
+          <div class="absolute top-0 left-0 right-0 h-1 gradient-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+          <img src="images/bathroom.png" alt="Bathroom Cleaning" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
+          <h3 class="text-primary-blue mt-5 mx-5 mb-2.5 text-xl font-bold">Bathroom Cleaning</h3>
+          <p class="px-5 pb-6 text-gray-600 leading-relaxed text-[15px]">Deep cleaning of single, double, or triple bathrooms with disinfectants.</p>
+        </div>
+        <div class="service-card bg-white rounded-2xl shadow-lg transition-all duration-400 overflow-hidden relative border border-black/5 hover:-translate-y-2.5 hover:scale-[1.02] hover:shadow-2xl group" data-stack-card>
+          <div class="absolute top-0 left-0 right-0 h-1 gradient-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+          <img src="images/flat.png" alt="BHK Cleaning" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
+          <h3 class="text-primary-blue mt-5 mx-5 mb-2.5 text-xl font-bold">BHK Cleaning</h3>
+          <p class="px-5 pb-6 text-gray-600 leading-relaxed text-[15px]">Full apartment cleaning for 1BHK, 2BHK, or 3BHK homes at affordable rates.</p>
+        </div>
+        <div class="service-card bg-white rounded-2xl shadow-lg transition-all duration-400 overflow-hidden relative border border-black/5 hover:-translate-y-2.5 hover:scale-[1.02] hover:shadow-2xl group" data-stack-card>
+          <div class="absolute top-0 left-0 right-0 h-1 gradient-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+          <img src="images/sofa.png" alt="Sofa Cleaning" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
+          <h3 class="text-primary-blue mt-5 mx-5 mb-2.5 text-xl font-bold">Sofa & Upholstery Cleaning</h3>
+          <p class="px-5 pb-6 text-gray-600 leading-relaxed text-[15px]">Get your furniture looking brand new with our fabric-safe cleaning process.</p>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="services.html" class="gradient-secondary text-white px-8 py-4 rounded-full font-semibold text-base inline-block transition-all duration-300 shadow-xl shadow-primary-blue/35 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-blue/45 relative overflow-hidden group">
+          <span class="relative z-10">View All Services</span>
+          <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GOOGLE REVIEWS SECTION ===== -->
+  <section class="reviews-section gradient-hero py-24 px-8 text-white relative overflow-hidden reveal">
+    <div class="absolute top-0 right-0 w-[200%] h-[200%] bg-radial-gradient from-white/10 to-transparent animate-spin" style="animation-duration: 25s;"></div>
+    <div class="max-w-7xl mx-auto text-center relative z-10">
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">What Our Customers Say</h2>
+      <p class="text-lg text-white/90 mb-12">Real reviews from Google</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12" data-stack-cards>
+        <div class="review-card bg-white/95 p-9 rounded-2xl shadow-xl transition-all duration-400 text-gray-900 hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="text-yellow-400 text-xl mb-5 tracking-wider">★★★★★</div>
+          <p class="text-[15px] leading-relaxed mb-6 italic text-gray-600">"Excellent service! They cleaned our entire 3BHK apartment thoroughly. The team was professional, punctual, and very courteous. Highly recommended!"</p>
+          <div class="flex flex-col gap-1 pt-5 border-t-2 border-black/5">
+            <strong class="text-gray-900 text-base font-bold">Rajesh Kumar</strong>
+            <span class="text-gray-600 text-xs">Google Review</span>
+          </div>
+        </div>
+        <div class="review-card bg-white/95 p-9 rounded-2xl shadow-xl transition-all duration-400 text-gray-900 hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="text-yellow-400 text-xl mb-5 tracking-wider">★★★★★</div>
+          <p class="text-[15px] leading-relaxed mb-6 italic text-gray-600">"SLG Housekeeping has been our regular cleaning service for the past year. Consistent quality, affordable prices, and trustworthy staff. Couldn't ask for more!"</p>
+          <div class="flex flex-col gap-1 pt-5 border-t-2 border-black/5">
+            <strong class="text-gray-900 text-base font-bold">Priya Sharma</strong>
+            <span class="text-gray-600 text-xs">Google Review</span>
+          </div>
+        </div>
+        <div class="review-card bg-white/95 p-9 rounded-2xl shadow-xl transition-all duration-400 text-gray-900 hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="text-yellow-400 text-xl mb-5 tracking-wider">★★★★★</div>
+          <p class="text-[15px] leading-relaxed mb-6 italic text-gray-600">"Outstanding bathroom cleaning service! They used eco-friendly products and left everything sparkling clean. Will definitely use their services again."</p>
+          <div class="flex flex-col gap-1 pt-5 border-t-2 border-black/5">
+            <strong class="text-gray-900 text-base font-bold">Anil Reddy</strong>
+            <span class="text-gray-600 text-xs">Google Review</span>
+          </div>
+        </div>
+        <div class="review-card bg-white/95 p-9 rounded-2xl shadow-xl transition-all duration-400 text-gray-900 hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="text-yellow-400 text-xl mb-5 tracking-wider">★★★★★</div>
+          <p class="text-[15px] leading-relaxed mb-6 italic text-gray-600">"Professional, reliable, and efficient. They cleaned our office space and did an amazing job. The team was well-equipped and knew exactly what to do."</p>
+          <div class="flex flex-col gap-1 pt-5 border-t-2 border-black/5">
+            <strong class="text-gray-900 text-base font-bold">Suresh Rao</strong>
+            <span class="text-gray-600 text-xs">Google Review</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="https://share.google/eQgAkYxP3rmCnKbRh" target="_blank" rel="noopener noreferrer" class="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-semibold text-base inline-block transition-all duration-300 border-2 border-white/30 hover:bg-white/30 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/20">Read More Reviews on Google</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK TESTIMONIALS SECTION ===== -->
+  <section class="testimonials-section py-24 px-8 bg-white reveal">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Client Testimonials</h2>
+      <p class="text-lg text-gray-600 mb-16">Hear from our satisfied clients</p>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10" data-stack-cards>
+        <div class="testimonial-card bg-white p-10 rounded-2xl shadow-lg transition-all duration-400 border border-black/5 text-left relative hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="absolute top-0 left-0 right-0 h-1 gradient-secondary rounded-t-2xl"></div>
+          <div class="text-primary-blue opacity-20 mb-6">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10z" fill="currentColor"/>
+            </svg>
+          </div>
+          <p class="text-base leading-relaxed text-gray-600 mb-8 italic">"SLG Housekeeping has transformed our office environment. Their attention to detail and commitment to cleanliness is outstanding. We've been using their services for over 2 years now."</p>
+          <div class="flex items-center gap-4 pt-6 border-t border-gray-100">
+            <div class="flex flex-col gap-1">
+              <strong class="text-gray-900 text-lg font-bold">Tech Solutions Pvt Ltd</strong>
+              <span class="text-gray-600 text-sm">Commercial Client</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card bg-white p-10 rounded-2xl shadow-lg transition-all duration-400 border border-black/5 text-left relative hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="absolute top-0 left-0 right-0 h-1 gradient-secondary rounded-t-2xl"></div>
+          <div class="text-primary-blue opacity-20 mb-6">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10z" fill="currentColor"/>
+            </svg>
+          </div>
+          <p class="text-base leading-relaxed text-gray-600 mb-8 italic">"As a busy professional, I don't have time for house cleaning. SLG has been a lifesaver! They're trustworthy, efficient, and my home always looks perfect after their visit."</p>
+          <div class="flex items-center gap-4 pt-6 border-t border-gray-100">
+            <div class="flex flex-col gap-1">
+              <strong class="text-gray-900 text-lg font-bold">Meera Patel</strong>
+              <span class="text-gray-600 text-sm">Residential Client</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card bg-white p-10 rounded-2xl shadow-lg transition-all duration-400 border border-black/5 text-left relative hover:-translate-y-2.5 hover:shadow-2xl" data-stack-card>
+          <div class="absolute top-0 left-0 right-0 h-1 gradient-secondary rounded-t-2xl"></div>
+          <div class="text-primary-blue opacity-20 mb-6">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10z" fill="currentColor"/>
+            </svg>
+          </div>
+          <p class="text-base leading-relaxed text-gray-600 mb-8 italic">"The sofa cleaning service exceeded our expectations! Our furniture looks brand new. The team was professional, and they used safe, eco-friendly products. Highly recommend!"</p>
+          <div class="flex items-center gap-4 pt-6 border-t border-gray-100">
+            <div class="flex flex-col gap-1">
+              <strong class="text-gray-900 text-lg font-bold">Kiran & Family</strong>
+              <span class="text-gray-600 text-sm">Residential Client</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-300 pt-16 pb-8 mt-20 relative">
+    <div class="absolute top-0 left-0 right-0 h-1 gradient-secondary"></div>
+    <div class="max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="text-2xl font-bold mb-4 gradient-text">SLG Housekeeping & Facility Services</h3>
+        <p class="leading-relaxed text-gray-400 text-sm">Providing reliable cleaning solutions since 2015. We care for your comfort and hygiene.</p>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold text-white mb-5 relative pb-2.5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 gradient-secondary after:rounded-sm">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Home</a></li>
+          <li><a href="about.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">About</a></li>
+          <li><a href="services.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Services</a></li>
+          <li><a href="gallery.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Gallery</a></li>
+          <li><a href="blogs.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Blog</a></li>
+          <li><a href="contact.html" class="text-gray-400 hover:text-white transition-all duration-300 inline-block hover:translate-x-1 text-sm">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold text-white mb-5 relative pb-2.5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 gradient-secondary after:rounded-sm">Contact Us</h4>
+        <ul class="space-y-2 text-gray-400 text-sm leading-relaxed">
+          <li><strong class="text-white font-semibold">Phone/WhatsApp:</strong> <a href="tel:+919949191912" class="hover:text-white transition-colors">+91 99491 91912</a> | <a href="https://wa.me/9949191912" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:text-green-300">WhatsApp</a></li>
+          <li><strong class="text-white font-semibold">Email:</strong> <a href="mailto:slghousekeepingservices@gmail.com" class="hover:text-white transition-colors">slghousekeepingservices@gmail.com</a></li>
+          <li><strong class="text-white font-semibold">Address:</strong> D.NO. 32-3-5/1, Bowdara Road, Bhupesh Nagar, Allipuram, Visakhapatnam – 530004, Andhra Pradesh</li>
+        </ul>
+        <div class="mt-4 flex gap-3">
+          <a href="https://www.facebook.com/profile.php?id=61554209671782" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/slg_hk_services_24by7/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UC-id_34vRiVE7S2UUdLTSCA" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center mt-12 pt-6 border-t border-white/10 text-sm text-gray-500">
+      <p>© 2015–2025 SLG Housekeeping & Facility Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== EXTERNAL SCRIPTS ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('open');
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "SLG Housekeeping & Facility Services",
+    "image": "https://www.slghk.in/images/Logo.png",
+    "@id": "https://www.slghk.in",
+    "url": "https://www.slghk.in",
+    "telephone": "+919949191912",
+    "email": "slghousekeepingservices@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "D.NO. 32-3-5/1, Bowdara Road, Bhupesh Nagar, Allipuram",
+      "addressLocality": "Visakhapatnam",
+      "postalCode": "530004",
+      "addressRegion": "Andhra Pradesh",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 17.6868,
+      "longitude": 83.2185
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "City",
+      "name": "Visakhapatnam"
+    },
+    "serviceType": [
+      "Housekeeping Services",
+      "Facility Management",
+      "Residential Cleaning",
+      "Commercial Cleaning",
+      "Industrial Cleaning"
+    ],
+    "foundingDate": "2015",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61554209671782",
+      "https://www.instagram.com/slg_hk_services_24by7/",
+      "https://www.youtube.com/channel/UC-id_34vRiVE7S2UUdLTSCA",
+      "https://share.google/PvyuEnXeY4vTZ50jM"
+    ]
+  }
+  </script>
+
+  <!-- Breadcrumb Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.slghk.in/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics (GA4) - Replace G-XXXXXXXXXX with your actual Measurement ID -->
+  <!-- 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Google Tag Manager (Alternative) - Replace GTM-XXXXXXX with your actual Container ID -->
+  <!--
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
+
+</body>
+</html>
